@@ -1,0 +1,29 @@
+.hero {
+  padding-block-end: var(--space-8);
+  border-bottom: 1px solid var(--color-border-subtle);
+  margin-bottom: var(--space-8);
+}
+
+/* Deliberately not a tracked-out all-caps eyebrow — just a small
+   mono numeral, consistent with the ProgressRail's own treatment
+   of module numbers, rather than the generic template-chrome
+   pattern of an uppercase label above every heading. */
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  color: var(--color-accent-confinement);
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  font-size: var(--font-size-h3);
+  color: var(--color-text-secondary);
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+.framing {
+  max-width: 60ch;
+  color: var(--color-text-primary);
+}

@@ -1,0 +1,28 @@
+.label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+}
+
+.date {
+  color: var(--color-text-secondary);
+}
+
+.tag {
+  padding: 0.15em 0.5em;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.future .tag {
+  color: var(--color-accent-highlight);
+  border: 1px solid var(--color-accent-highlight);
+}
+
+.demonstrated .tag {
+  color: var(--color-status-reached);
+  border: 1px solid var(--color-status-reached);
+}

@@ -1,0 +1,15 @@
+.tag {
+  display: inline-flex;
+  gap: var(--space-1);
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+}
+
+.typeLabel {
+  border-bottom: 1px dotted var(--color-border-strong);
+}
+
+.date {
+  color: var(--color-text-secondary);
+}

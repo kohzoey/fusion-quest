@@ -1,0 +1,4 @@
+.main {
+  padding-block: var(--space-8) var(--space-16);
+  min-height: 60vh;
+}

@@ -1,0 +1,101 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  margin-block: var(--space-6);
+}
+
+.svg {
+  width: 100%;
+  max-width: 22rem;
+  margin-inline: auto;
+  display: block;
+}
+
+.shape {
+  cursor: pointer;
+  stroke: var(--color-bg-deep);
+  stroke-width: 1;
+  transition: opacity var(--motion-fast) var(--motion-ease), filter var(--motion-fast) var(--motion-ease);
+  fill: var(--color-accent-confinement);
+  opacity: 0.55;
+}
+
+.shape:hover {
+  opacity: 0.85;
+}
+
+.shape:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+.active {
+  opacity: 1;
+  filter: drop-shadow(0 0 6px currentColor);
+}
+
+.vessel {
+  fill: var(--color-bg-panel-raised);
+  opacity: 0.9;
+  stroke: var(--color-border-strong);
+}
+
+.wall {
+  fill: var(--color-accent-highlight);
+}
+
+.plasma {
+  fill: var(--color-accent-heat);
+}
+
+.divertor {
+  fill: var(--color-status-far);
+}
+
+.panel {
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border-subtle);
+  border-left: 3px solid var(--color-accent-confinement);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+}
+
+.panel h3 {
+  margin-bottom: var(--space-2);
+}
+
+.deeper {
+  color: var(--color-text-secondary);
+}
+
+.misconception {
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
+  justify-content: center;
+}
+
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.swatch {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 3px;
+  display: inline-block;
+}

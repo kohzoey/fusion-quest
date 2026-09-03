@@ -1,0 +1,11 @@
+.section {
+  padding-block: var(--space-12);
+  max-width: var(--content-max-width);
+  margin-inline: auto;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-block: var(--space-8);
+  }
+}

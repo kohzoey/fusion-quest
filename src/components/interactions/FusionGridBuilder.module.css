@@ -1,0 +1,92 @@
+.wrapper {
+  margin-block: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.intro {
+  color: var(--color-text-secondary);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.chip {
+  min-height: var(--touch-target-min);
+  padding: var(--space-2) var(--space-4);
+  border-radius: 999px;
+  border: 1px solid var(--color-border-subtle);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-size: var(--font-size-small);
+}
+
+.chip:hover {
+  border-color: var(--color-accent-confinement);
+}
+
+.chipSelected {
+  border-color: var(--color-accent-heat);
+  color: var(--color-accent-heat);
+  background: color-mix(in srgb, var(--color-accent-heat) 12%, transparent);
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.resultCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pairLabel {
+  display: block;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+}
+
+.potential .pairLabel {
+  color: var(--color-accent-heat);
+}
+
+.potential p {
+  margin: 0;
+}
+
+.challenge .pairLabel {
+  color: var(--color-status-far);
+}
+
+.challenge p {
+  margin: 0;
+}
+
+.closing {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h3);
+  color: var(--color-text-primary);
+  border-left: 3px solid var(--color-accent-confinement);
+  padding-left: var(--space-4);
+}

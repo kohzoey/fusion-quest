@@ -1,0 +1,27 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  border: 1px solid currentColor;
+}
+
+.icon {
+  font-size: 0.9em;
+}
+
+.far {
+  color: var(--color-status-far);
+}
+
+.approaching {
+  color: var(--color-status-approaching);
+}
+
+.reached {
+  color: var(--color-status-reached);
+}
