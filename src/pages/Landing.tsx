@@ -3,6 +3,7 @@ import { moduleSummaries } from "../data/moduleSummaries";
 import { Card } from "../components/ui/Card";
 import { Button } from "../components/ui/Button";
 import { HeroIllustration } from "../components/module/HeroIllustration";
+import { ModuleIcon } from "../components/module/ModuleIcon";
 import styles from "./Landing.module.css";
 
 export function Landing() {
@@ -31,7 +32,10 @@ export function Landing() {
         <div className={styles.cards}>
           {moduleSummaries.map((m) => (
             <Card key={m.id} className={styles.card}>
-              <span className={styles.cardOrder}>{m.order}</span>
+              <div className={styles.cardTop}>
+                <ModuleIcon moduleId={m.id} />
+                <span className={styles.cardOrder}>{m.order}</span>
+              </div>
               <h3>{m.title}</h3>
               <p>{m.shortDescription}</p>
               <Link to={m.path}>
