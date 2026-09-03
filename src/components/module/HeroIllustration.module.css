@@ -1,0 +1,82 @@
+.svg {
+  width: 100%;
+  max-width: 32rem;
+  height: auto;
+  display: block;
+}
+
+.spike {
+  stroke: var(--color-accent-heat);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  opacity: 0.75;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+.core {
+  fill: var(--color-accent-heat);
+  opacity: 0.25;
+}
+
+.coreInner {
+  fill: var(--color-accent-heat);
+}
+
+.trail {
+  stroke: var(--color-accent-confinement);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 6;
+  opacity: 0.4;
+}
+
+.particle {
+  fill: var(--color-accent-confinement);
+  animation: travel 3.2s ease-in-out infinite;
+}
+
+.ringOuter {
+  fill: none;
+  stroke: var(--color-accent-confinement);
+  stroke-width: 2;
+  opacity: 0.6;
+}
+
+.ringInner {
+  fill: none;
+  stroke: var(--color-accent-highlight);
+  stroke-width: 1.5;
+  opacity: 0.5;
+}
+
+.orbitPath {
+  fill: none;
+  stroke: none;
+}
+
+.orbitDot {
+  fill: var(--color-accent-heat);
+  transform-origin: 500px 180px;
+  animation: orbit 6s linear infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.95; }
+}
+
+@keyframes travel {
+  0%, 100% { opacity: 0.25; r: 3; }
+  50% { opacity: 0.9; r: 4.5; }
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spike, .particle, .orbitDot {
+    animation: none;
+    opacity: 0.7;
+  }
+}
