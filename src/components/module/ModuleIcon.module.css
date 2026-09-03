@@ -1,0 +1,8 @@
+.icon {
+  width: 28px;
+  height: 28px;
+  color: var(--color-accent-confinement);
+  stroke: currentColor;
+  stroke-width: 1.6;
+  flex-shrink: 0;
+}
