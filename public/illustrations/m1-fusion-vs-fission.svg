@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Arrow Markers -->
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#35D6FF" />
+    </marker>
+
+    <marker id="arrow-violet" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#9B7CFF" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#07111F" />
+
+  <!-- Center Split Line -->
+  <line x1="600" y1="90" x2="600" y2="585" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="6 6" />
+
+  <!-- ==================== LEFT SIDE: FUSION ==================== -->
+  <g id="fusion-side">
+    <!-- Incoming Light Nuclei 1 (Top Left) -->
+    <circle cx="180" cy="225" r="28" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+    <circle cx="180" cy="225" r="20" fill="#35D6FF" fill-opacity="0.3" />
+    
+    <!-- Incoming Light Nuclei 2 (Bottom Left) -->
+    <circle cx="180" cy="450" r="28" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+    <circle cx="180" cy="450" r="20" fill="#35D6FF" fill-opacity="0.3" />
+
+    <!-- Merging Direction Vectors -->
+    <path d="M 225 245 Q 310 280 345 315" fill="none" stroke="#35D6FF" stroke-width="2.5" marker-end="url(#arrow-cyan)" />
+    <path d="M 225 430 Q 310 395 345 360" fill="none" stroke="#35D6FF" stroke-width="2.5" marker-end="url(#arrow-cyan)" />
+
+    <!-- Merged Fusion Core (Glowing Gold) -->
+    <circle cx="435" cy="337.5" r="62" fill="#FFB84D" fill-opacity="0.12" filter="url(#glow-gold)" />
+    <circle cx="435" cy="337.5" r="46" fill="none" stroke="#FFB84D" stroke-width="3" filter="url(#glow-gold)" />
+    <circle cx="435" cy="337.5" r="32" fill="#FFB84D" fill-opacity="0.4" />
+  </g>
+
+  <!-- ==================== RIGHT SIDE: FISSION ==================== -->
+  <g id="fission-side">
+    <!-- Original Heavy Nucleus (Large) -->
+    <circle cx="765" cy="337.5" r="50" fill="none" stroke="#9B7CFF" stroke-width="3" filter="url(#glow-violet)" />
+    <circle cx="765" cy="337.5" r="36" fill="#9B7CFF" fill-opacity="0.25" />
+
+    <!-- Splitting Direction Vectors -->
+    <path d="M 830 315 Q 875 280 940 245" fill="none" stroke="#9B7CFF" stroke-width="2.5" marker-end="url(#arrow-violet)" />
+    <path d="M 830 360 Q 875 395 940 430" fill="none" stroke="#9B7CFF" stroke-width="2.5" marker-end="url(#arrow-violet)" />
+
+    <!-- Resulting Fragment Nuclei 1 (Top Right) -->
+    <circle cx="990" cy="225" r="28" fill="none" stroke="#9B7CFF" stroke-width="2" filter="url(#glow-violet)" />
+    <circle cx="990" cy="225" r="20" fill="#9B7CFF" fill-opacity="0.3" />
+
+    <!-- Resulting Fragment Nuclei 2 (Bottom Right) -->
+    <circle cx="990" cy="450" r="28" fill="none" stroke="#9B7CFF" stroke-width="2" filter="url(#glow-violet)" />
+    <circle cx="990" cy="450" r="20" fill="#9B7CFF" fill-opacity="0.3" />
+  </g>
+</svg>
