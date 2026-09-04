@@ -3,6 +3,7 @@ import { isPlaceholder } from "../../data/placeholders";
 import { SourceTag } from "../ui/SourceTag";
 import { ComparisonTable } from "../ui/ComparisonTable";
 import { module5ComparisonColumns, module5ComparisonRows } from "../../data/module5.projects";
+import { StageIcon } from "./StageIcon";
 import styles from "./StageBlock.module.css";
 
 interface StageBlockProps {
@@ -15,7 +16,10 @@ export function StageBlock({ stage }: StageBlockProps) {
 
   return (
     <article className={styles.stage} aria-labelledby={`${stage.id}-title`}>
-      <h2 id={`${stage.id}-title`}>{stage.title}</h2>
+      <h2 id={`${stage.id}-title`} className={styles.titleRow}>
+        <StageIcon />
+        <span>{stage.title}</span>
+      </h2>
       {paragraphs.map((para, i) => (
         <p key={i} className={pending ? styles.pendingText : undefined}>
           {para}
@@ -38,14 +42,9 @@ export function StageBlock({ stage }: StageBlockProps) {
       ) : null}
 
       {stage.misconception ? (
-        <div className={styles.misconception} role="note">
-          <span className={styles.misconceptionIcon} aria-hidden="true">
-            ⚠
-          </span>
-          <p>
-            <strong>Watch out for:</strong> {stage.misconception}
-          </p>
-        </div>
+        <p className={styles.misconception}>
+          <strong>Watch out for:</strong> {stage.misconception}
+        </p>
       ) : null}
 
       {stage.source ? <SourceTag source={stage.source} /> : null}
