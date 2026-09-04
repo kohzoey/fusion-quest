@@ -136,7 +136,13 @@ export const module2: ModuleContent = {
       explanation:
         "The Lawson criteria set the minimum plasma temperature and the minimum density × confinement time needed for useful fusion performance. The triple product is the single number scientists calculate from density, temperature, and confinement time to check how demanding those conditions are.\n\nTriple product tells us about plasma conditions. It is not the same as Q or electrical efficiency — those measure something different, which Module 5 explains when it covers real experiments like NIF.",
       misconception: "\"Triple product = Q\" — the triple product describes plasma conditions; Q is an energy ratio at a specified accounting boundary. They are not interchangeable.",
-      source: { label: "J.D. Lawson (1955); Wurzel & Hsu, Physics of Plasmas 29, 062103 (2022)", type: "primary" },
+            source: { label: "J.D. Lawson (1955); Wurzel & Hsu, Physics of Plasmas 29, 062103 (2022)", type: "primary" },
+    },
+    {
+      id: "fusion-lab-intro",
+      title: "Your Turn: Fusion Lab",
+      explanation:
+        "Now you get to become the plasma scientist. Your challenge is to find combinations of temperature, density, and confinement time that reach the educational reference level.",
     },
   ],
   flagshipInteraction: { component: "FusionLab", config: fusionLabConfig },
