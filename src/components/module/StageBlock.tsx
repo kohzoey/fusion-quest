@@ -9,15 +9,6 @@ interface StageBlockProps {
   stage: Stage;
 }
 
-/**
- * Structural rendering, with one resolved exception: a stage whose
- * visual.ref is "module5-comparison" renders the real ITER/NIF/CFS/
- * Helion ComparisonTable rather than the generic placeholder box.
- * Other stage-level visuals referenced across M1–M5 remain
- * placeholders, consistent with how those modules' blueprints only
- * specified them as suggested diagrams, not yet resolved to
- * concrete components — see the Phase reports for the running list.
- */
 export function StageBlock({ stage }: StageBlockProps) {
   const pending = isPlaceholder(stage.explanation);
   const paragraphs = stage.explanation.split("\n\n");
@@ -47,9 +38,14 @@ export function StageBlock({ stage }: StageBlockProps) {
       ) : null}
 
       {stage.misconception ? (
-        <p className={styles.misconception}>
-          <strong>Watch out for:</strong> {stage.misconception}
-        </p>
+        <div className={styles.misconception} role="note">
+          <span className={styles.misconceptionIcon} aria-hidden="true">
+            ⚠
+          </span>
+          <p>
+            <strong>Watch out for:</strong> {stage.misconception}
+          </p>
+        </div>
       ) : null}
 
       {stage.source ? <SourceTag source={stage.source} /> : null}
