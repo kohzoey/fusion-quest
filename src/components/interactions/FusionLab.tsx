@@ -91,9 +91,11 @@ export function FusionLab({ config }: FusionLabProps) {
             <dt>Triple product</dt>
             <dd className="numeric">{formatScientific(tp)} m⁻³·keV·s</dd>
           </div>
-          <div>
+                    <div>
             <dt>Ratio to educational reference</dt>
-            <dd className="numeric">{ratio.toFixed(4)}</dd>
+            <dd className="numeric">
+              {ratio.toFixed(4)} <span className={styles.percentHint}>({(ratio * 100).toFixed(1)}%)</span>
+            </dd>
           </div>
         </dl>
         <StatusBadge status={status} />
