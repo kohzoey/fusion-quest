@@ -79,8 +79,3 @@ export function MissionCheck({ missionCheck }: MissionCheckProps) {
     </section>
   );
 }
-        );
-      })}
-    </section>
-  );
-}
