@@ -41,7 +41,11 @@ export function StageBlock({ stage }: StageBlockProps) {
           />
         ) : stage.visual && stage.visual.ref.startsWith("/illustrations/") ? (
           <figure className={styles.illustration}>
-            <img src={stage.visual.ref} alt={stage.visual.alt} loading="lazy" />
+                     <img
+              src={`${import.meta.env.BASE_URL}${stage.visual.ref.replace(/^\//, "")}`}
+              alt={stage.visual.alt}
+              loading="lazy"
+            />
           </figure>
         ) : stage.visual ? (
           <div className={styles.visualPlaceholder} role="img" aria-label={stage.visual.alt}>
