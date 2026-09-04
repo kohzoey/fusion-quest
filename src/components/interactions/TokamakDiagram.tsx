@@ -1,5 +1,6 @@
 import { useId, useState } from "react";
 import type { TokamakComponent } from "../../data/module3.tokamak";
+import { emphasizeTerms } from "../../utils/emphasizeTerms";
 import styles from "./TokamakDiagram.module.css";
 
 interface TokamakDiagramProps {
@@ -23,7 +24,6 @@ function polar(radius: number, deg: number) {
   return { x: CENTER + radius * Math.cos(rad), y: CENTER + radius * Math.sin(rad) };
 }
 
-/** Builds an SVG path for an annular wedge (or full ring, if startDeg/endDeg span 360). */
 function annulusPath(outer: number, inner: number, startDeg: number, endDeg: number): string {
   const large = endDeg - startDeg > 180 ? 1 : 0;
   const p1 = polar(outer, startDeg);
@@ -39,13 +39,6 @@ function annulusPath(outer: number, inner: number, startDeg: number, endDeg: num
   ].join(" ");
 }
 
-/**
- * Simplified top-down schematic of a tokamak: a torus viewed from
- * above, drawn as concentric rings (magnetic coils outside the
- * vessel, vessel, first wall, plasma) with the divertor as a wedge
- * at the bottom. Not an engineering-accurate rendering — an
- * educational cutaway, per the locked spec's own framing.
- */
 export function TokamakDiagram({ components }: TokamakDiagramProps) {
   const [activeId, setActiveId] = useState<string>(components[0]?.id ?? "");
   const titleId = useId();
@@ -76,7 +69,6 @@ export function TokamakDiagram({ components }: TokamakDiagramProps) {
       >
         <title id={titleId}>Interactive tokamak cutaway diagram</title>
 
-        {/* Magnetic coils — drawn first so rings sit visually above them */}
         <g>
           {coilPositions.map(({ deg, pos }, i) => (
             <rect
@@ -98,7 +90,6 @@ export function TokamakDiagram({ components }: TokamakDiagramProps) {
           ))}
         </g>
 
-        {/* Vacuum vessel ring */}
         <path
           d={annulusPath(VESSEL_OUTER, VESSEL_INNER, 0, 359.999)}
           className={[styles.shape, styles.vessel, activeId === "vacuum-vessel" ? styles.active : ""].join(" ")}
@@ -110,7 +101,6 @@ export function TokamakDiagram({ components }: TokamakDiagramProps) {
           onKeyDown={onKeyActivate("vacuum-vessel")}
         />
 
-        {/* First wall ring */}
         <path
           d={annulusPath(WALL_OUTER, WALL_INNER, 0, 359.999)}
           className={[styles.shape, styles.wall, activeId === "first-wall" ? styles.active : ""].join(" ")}
@@ -122,7 +112,6 @@ export function TokamakDiagram({ components }: TokamakDiagramProps) {
           onKeyDown={onKeyActivate("first-wall")}
         />
 
-        {/* Plasma ring (excludes the divertor wedge at the bottom) */}
         <path
           d={annulusPath(PLASMA_OUTER, PLASMA_INNER, DIVERTOR_END_DEG, DIVERTOR_START_DEG + 360)}
           className={[styles.shape, styles.plasma, activeId === "plasma" ? styles.active : ""].join(" ")}
@@ -134,7 +123,6 @@ export function TokamakDiagram({ components }: TokamakDiagramProps) {
           onKeyDown={onKeyActivate("plasma")}
         />
 
-        {/* Divertor wedge */}
         <path
           d={annulusPath(WALL_OUTER, PLASMA_INNER, DIVERTOR_START_DEG, DIVERTOR_END_DEG)}
           className={[styles.shape, styles.divertor, activeId === "divertor" ? styles.active : ""].join(" ")}
@@ -150,8 +138,8 @@ export function TokamakDiagram({ components }: TokamakDiagramProps) {
       {active ? (
         <div className={styles.panel} role="status">
           <h3>{active.name}</h3>
-          <p>{active.explanation}</p>
-          {active.deeper ? <p className={styles.deeper}>{active.deeper}</p> : null}
+          <p>{emphasizeTerms(active.explanation)}</p>
+          {active.deeper ? <p className={styles.deeper}>{emphasizeTerms(active.deeper)}</p> : null}
           <p className={styles.misconception}>
             <strong>Watch out for:</strong> {active.misconception}
           </p>
