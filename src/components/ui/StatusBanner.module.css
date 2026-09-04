@@ -1,0 +1,45 @@
+.banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-md);
+  border: 1px solid currentColor;
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  animation: bannerIn var(--motion-medium) var(--motion-ease);
+}
+
+.icon {
+  font-size: 1.4rem;
+}
+
+.label {
+  letter-spacing: 0.01em;
+}
+
+.far {
+  color: var(--color-status-far);
+  background: color-mix(in srgb, var(--color-status-far) 10%, transparent);
+}
+
+.approaching {
+  color: var(--color-status-approaching);
+  background: color-mix(in srgb, var(--color-status-approaching) 10%, transparent);
+}
+
+.reached {
+  color: var(--color-status-reached);
+  background: color-mix(in srgb, var(--color-status-reached) 12%, transparent);
+}
+
+@keyframes bannerIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner { animation: none; }
+}
