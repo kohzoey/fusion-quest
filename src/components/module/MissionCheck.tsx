@@ -8,13 +8,6 @@ interface MissionCheckProps {
   missionCheck: MissionCheckType;
 }
 
-/**
- * Structural implementation: renders questions, tracks a selected
- * option per question, shows correct/incorrect state and the
- * locked explanation immediately, with a retry control. No scoring
- * or pass/fail gate — these are learning checks, not examinations,
- * per the brief.
- */
 export function MissionCheck({ missionCheck }: MissionCheckProps) {
   const [answers, setAnswers] = useState<Record<string, string | undefined>>({});
 
@@ -71,6 +64,7 @@ export function MissionCheck({ missionCheck }: MissionCheckProps) {
             {isAnswered ? (
               <div className={styles.feedback} role="status">
                 <p className={isCorrect ? styles.correctText : styles.incorrectText}>
+                  <span aria-hidden="true">{isCorrect ? "✓ " : "△ "}</span>
                   {isCorrect ? "Correct." : "Not quite."}
                 </p>
                 <p>{q.explanation}</p>
@@ -80,6 +74,11 @@ export function MissionCheck({ missionCheck }: MissionCheckProps) {
               </div>
             ) : null}
           </Card>
+        );
+      })}
+    </section>
+  );
+}
         );
       })}
     </section>
