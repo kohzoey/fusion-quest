@@ -3,6 +3,21 @@
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-md);
   padding: var(--space-6);
+  transition: border-color var(--motion-medium) var(--motion-ease),
+    box-shadow var(--motion-medium) var(--motion-ease);
+}
+
+.card:hover,
+.card:focus-within {
+  border-color: var(--color-accent-confinement);
+  box-shadow: 0 0 0 1px var(--color-accent-confinement),
+    0 0 16px -4px var(--color-accent-confinement);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
 }
 
 .raised {
