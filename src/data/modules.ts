@@ -30,6 +30,11 @@ export const module1: ModuleContent = {
       title: "Fusion vs. Fission",
       explanation:
         "Two important nuclear processes that can release energy are fusion and fission — and it's easy to mix them up, so it's worth getting this straight before anything else.\n\nFusion: light nuclei combine to form a heavier nucleus, releasing energy in the process. This is what powers the Sun and every other star.\n\nFission: a heavy nucleus splits apart into smaller pieces, also releasing energy. This is what powers conventional nuclear power plants today.\n\nThink of it as two opposite directions on the same idea: fusion pushes small nuclei together; fission breaks one large nucleus apart. Both release energy, but they rely on different physics, different fuels, and completely different technology.",
+   visual: {
+        kind: "diagram",
+        ref: "/illustrations/m1-fusion-vs-fission.svg",
+        alt: "Side-by-side diagram: on the left, two light nuclei merge into one heavier glowing nucleus (fusion); on the right, one heavy nucleus splits into two smaller nuclei (fission)",
+      },
     },
     {
       id: "eddington",
