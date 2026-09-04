@@ -12,13 +12,27 @@ html {
 
 body {
   margin: 0;
-  background: var(--color-bg-deep);
+  background-color: var(--color-bg-deep);
   color: var(--color-text-primary);
   font-family: var(--font-body);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  background-image: radial-gradient(1.5px 1.5px at 8% 12%, rgba(244, 247, 250, 0.22), transparent),
+    radial-gradient(1px 1px at 22% 38%, rgba(244, 247, 250, 0.16), transparent),
+    radial-gradient(1.5px 1.5px at 35% 8%, rgba(53, 214, 255, 0.18), transparent),
+    radial-gradient(1px 1px at 48% 55%, rgba(244, 247, 250, 0.18), transparent),
+    radial-gradient(1px 1px at 58% 22%, rgba(244, 247, 250, 0.14), transparent),
+    radial-gradient(1.5px 1.5px at 68% 42%, rgba(255, 184, 77, 0.15), transparent),
+    radial-gradient(1px 1px at 78% 65%, rgba(244, 247, 250, 0.16), transparent),
+    radial-gradient(1.5px 1.5px at 88% 18%, rgba(244, 247, 250, 0.2), transparent),
+    radial-gradient(1px 1px at 95% 48%, rgba(53, 214, 255, 0.14), transparent),
+    radial-gradient(1px 1px at 15% 78%, rgba(244, 247, 250, 0.14), transparent),
+    radial-gradient(1.5px 1.5px at 62% 88%, rgba(244, 247, 250, 0.16), transparent);
+  background-repeat: repeat;
+  background-size: 100% 100vh;
+  background-attachment: fixed;
 }
 
 h1,
@@ -68,26 +82,17 @@ svg {
   display: block;
 }
 
-/* Prevent any element from forcing horizontal scroll on narrow viewports */
 #root {
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-/* ---- Focus visibility ----
-   Every interactive element must show a visible focus ring.
-   Never rely on the browser default alone, and never remove it
-   without replacing it. */
 :focus-visible {
   outline: 2px solid var(--color-focus-ring);
   outline-offset: 2px;
   border-radius: var(--radius-sm);
 }
 
-/* ---- Reduced motion ----
-   Global safety net; individual components may also check this
-   media query directly when they need to swap an animation for
-   an instant state change rather than simply disabling motion. */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -111,8 +116,6 @@ svg {
   border: 0;
 }
 
-/* Skip-link specifically: reveal on keyboard focus so keyboard
-   users can jump past the nav, per accessibility requirements. */
 a.visually-hidden:focus {
   position: fixed;
   top: var(--space-2);
