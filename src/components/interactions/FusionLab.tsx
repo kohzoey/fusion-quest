@@ -3,7 +3,7 @@ import type { FusionLabConfig } from "../../types/fusionLab";
 import { resolveFusionLabStatus } from "../../types/fusionLab";
 import { temperatureKeV, tripleProduct, referenceRatio, formatScientific } from "../../utils/fusionLabMath";
 import { Slider } from "../ui/Slider";
-import { StatusBadge } from "../ui/StatusBadge";
+import { StatusBanner } from "../ui/StatusBanner";
 import { Disclaimer } from "../ui/Disclaimer";
 import { Card } from "../ui/Card";
 import styles from "./FusionLab.module.css";
@@ -29,13 +29,6 @@ export function FusionLab({ config }: FusionLabProps) {
     [ratio, config.statusThresholds]
   );
 
-  // Tracks whether the student has ever reached "reached", across
-  // slider changes. Deliberately not a useEffect: this is React's
-  // documented "adjusting state during render" pattern for storing
-  // information based on a value that changed since the last
-  // render — an effect here would fire an extra, unnecessary
-  // render on every status change instead of updating in the same
-  // pass. See https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-effect
   const [prevStatus, setPrevStatus] = useState(status);
   if (status !== prevStatus) {
     setPrevStatus(status);
@@ -45,11 +38,8 @@ export function FusionLab({ config }: FusionLabProps) {
   }
 
   const iterRatio = referenceRatio(config.iterMarker.tripleProduct, config);
-  // Gauge is scaled logarithmically across a fixed display range so both
-  // the educational reference and the (much larger) ITER marker fit on
-  // one axis alongside typical student-reachable values.
-  const gaugeMin = -3; // 10^-3 x reference
-  const gaugeMax = 2; // 10^2 x reference
+  const gaugeMin = -3;
+  const gaugeMax = 2;
   const toGaugePercent = (r: number) => {
     const clamped = Math.max(gaugeMin, Math.min(gaugeMax, Math.log10(Math.max(r, 1e-9))));
     return ((clamped - gaugeMin) / (gaugeMax - gaugeMin)) * 100;
@@ -91,14 +81,14 @@ export function FusionLab({ config }: FusionLabProps) {
             <dt>Triple product</dt>
             <dd className="numeric">{formatScientific(tp)} m⁻³·keV·s</dd>
           </div>
-                    <div>
+          <div>
             <dt>Ratio to educational reference</dt>
             <dd className="numeric">
               {ratio.toFixed(4)} <span className={styles.percentHint}>({(ratio * 100).toFixed(1)}%)</span>
             </dd>
           </div>
         </dl>
-        <StatusBadge status={status} />
+        <StatusBanner status={status} />
       </Card>
 
       <div className={styles.gauge} role="img" aria-label={`Your plasma is at ${ratio.toFixed(3)} times the educational reference level, compared with ITER's projected design point at ${iterRatio.toFixed(1)} times that level.`}>
