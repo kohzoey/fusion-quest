@@ -32,7 +32,26 @@
 
 .active {
   opacity: 1;
-  filter: drop-shadow(0 0 6px currentColor);
+  filter: drop-shadow(0 0 10px currentColor) drop-shadow(0 0 3px currentColor);
+  stroke: currentColor;
+  stroke-width: 2.5;
+  animation: activePulse 1.6s ease-in-out infinite;
+}
+
+@keyframes activePulse {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 8px currentColor) drop-shadow(0 0 2px currentColor);
+  }
+  50% {
+    filter: drop-shadow(0 0 14px currentColor) drop-shadow(0 0 4px currentColor);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .active {
+    animation: none;
+  }
 }
 
 .vessel {
