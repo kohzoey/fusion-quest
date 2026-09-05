@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Soft Radial Glow Filters -->
+    <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" opacity="0.8" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#07111F" />
+
+  <!-- Center Split Line (Museum Poster Layout Divider) -->
+  <line x1="600" y1="100" x2="600" y2="575" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.2" stroke-dasharray="6 6" />
+
+  <!-- ==================== LEFT SIDE: UNCONTROLLED BURST ==================== -->
+  <g id="uncontrolled-burst">
+    <!-- Abstract Cosmic Grid Background Accent -->
+    <circle cx="330" cy="337.5" r="220" fill="none" stroke="#9B7CFF" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="4 8" />
+
+    <!-- Outer Dispersed Burst Aura -->
+    <circle cx="330" cy="337.5" r="130" fill="#FFB84D" fill-opacity="0.06" filter="url(#glow-gold)" />
+
+    <!-- Sharp Radiating Energy Spikes (Uncontrolled Starburst) -->
+    <path d="M 330 117.5 
+             L 348 277.5 L 500 187.5 L 388 307.5 L 550 337.5 L 388 367.5 L 500 487.5 L 348 397.5 
+             L 330 557.5 
+             L 312 397.5 L 160 487.5 L 272 367.5 L 110 337.5 L 272 307.5 L 160 187.5 L 312 277.5 Z" 
+          fill="#FFB84D" fill-opacity="0.25" stroke="#FFB84D" stroke-width="2" filter="url(#glow-gold)" />
+
+    <!-- Secondary Asymmetric Sharp Rays (Violet & Cyan Accents) -->
+    <path d="M 330 167.5 L 340 307.5 L 470 237.5 L 360 327.5 L 500 337.5 L 360 347.5 L 470 437.5 L 340 367.5 L 330 507.5 L 320 367.5 L 190 437.5 L 300 347.5 L 160 337.5 L 300 327.5 L 190 237.5 L 320 307.5 Z" 
+          fill="none" stroke="#9B7CFF" stroke-width="1.5" filter="url(#glow-violet)" opacity="0.8" />
+
+    <!-- Intense Central Sharp Core -->
+    <polygon points="330,237.5 352,315.5 430,337.5 352,359.5 330,437.5 308,359.5 230,337.5 308,315.5" 
+             fill="#FFB84D" filter="url(#glow-gold)" />
+
+    <!-- Outward Dissipating Particle Vector Sparks -->
+    <circle cx="520" cy="140" r="3" fill="#FFB84D" filter="url(#glow-gold)" />
+    <circle cx="130" cy="190" r="4" fill="#9B7CFF" filter="url(#glow-violet)" />
+    <circle cx="540" cy="480" r="3.5" fill="#35D6FF" filter="url(#glow-cyan)" />
+    <circle cx="150" cy="500" r="3" fill="#FFB84D" filter="url(#glow-gold)" />
+  </g>
+
+  <!-- ==================== RIGHT SIDE: CONTROLLED SUSTAINED CORE ==================== -->
+  <g id="controlled-sustained">
+    <!-- Concentric Outer Magnetic Geometry -->
+    <circle cx="870" cy="337.5" r="220" fill="none" stroke="#35D6FF" stroke-width="1" stroke-opacity="0.12" stroke-dasharray="6 6" />
+    <circle cx="870" cy="337.5" r="170" fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.25" />
+
+    <!-- Primary Containing Ring (Violet Magnetic Boundary) -->
+    <circle cx="870" cy="337.5" r="125" fill="none" stroke="#9B7CFF" stroke-width="3" filter="url(#glow-violet)" />
+    
+    <!-- Secondary Precision Shield Ring (Cyan Dashed Outer Wall) -->
+    <circle cx="870" cy="337.5" r="105" fill="none" stroke="#35D6FF" stroke-width="2" stroke-dasharray="8 6" filter="url(#glow-cyan)" />
+
+    <!-- Stable Vacuum Field Gap -->
+    <circle cx="870" cy="337.5" r="85" fill="none" stroke="#35D6FF" stroke-width="1" stroke-opacity="0.4" />
+
+    <!-- Inner Smooth Sustained Glowing Core -->
+    <!-- Soft Heat Aura -->
+    <circle cx="870" cy="337.5" r="70" fill="#FFB84D" fill-opacity="0.15" filter="url(#glow-gold)" />
+    
+    <!-- Smooth Plasma Outer Boundary -->
+    <circle cx="870" cy="337.5" r="50" fill="none" stroke="#FFB84D" stroke-width="3" filter="url(#glow-gold)" />
+    
+    <!-- Constant Equilibrium Center -->
+    <circle cx="870" cy="337.5" r="36" fill="#FFB84D" fill-opacity="0.85" filter="url(#glow-gold)" />
+
+    <!-- Minimal Radial Equilibrium Guides (Museum Poster Precision Vectors) -->
+    <g stroke="#35D6FF" stroke-width="1.5" opacity="0.6" stroke-linecap="round">
+      <line x1="870" y1="202.5" x2="870" y2="222.5" />
+      <line x1="870" y1="452.5" x2="870" y2="472.5" />
+      <line x1="735" y1="337.5" x2="755" y2="337.5" />
+      <line x1="985" y1="337.5" x2="1005" y2="337.5" />
+    </g>
+  </g>
+</svg>
