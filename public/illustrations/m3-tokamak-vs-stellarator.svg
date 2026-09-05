@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-orange" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Torus Fill Gradients -->
+    <linearGradient id="tokamak-shell-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9B7CFF" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#9B7CFF" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#35D6FF" stop-opacity="0.18" />
+    </linearGradient>
+
+    <linearGradient id="stellarator-shell-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B7CFF" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#FFB84D" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#35D6FF" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Thick Center Current Gradient -->
+    <linearGradient id="center-current-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB84D" />
+      <stop offset="50%" stop-color="#35D6FF" />
+      <stop offset="100%" stop-color="#FFB84D" />
+    </linearGradient>
+  </defs>
+
+  <!-- ================= LEFT SIDE: SYMMETRIC TOKAMAK WITH CENTRAL PLASMA CURRENT ================= -->
+  <g transform="translate(0, 0)">
+    <!-- Back Outer Coil Guides (Structural Detail) -->
+    <g stroke="#35D6FF" stroke-width="1.2" fill="none" opacity="0.25" stroke-dasharray="3 3">
+      <ellipse cx="140" cy="300" rx="40" ry="85" transform="rotate(-15 140 300)" />
+      <ellipse cx="210" cy="220" rx="38" ry="80" transform="rotate(-35 210 220)" />
+      <ellipse cx="300" cy="180" rx="35" ry="75" transform="rotate(-65 300 180)" />
+      <ellipse cx="400" cy="220" rx="38" ry="80" transform="rotate(35 400 220)" />
+      <ellipse cx="460" cy="300" rx="40" ry="85" transform="rotate(15 460 300)" />
+    </g>
+
+    <!-- Back Torus Shell -->
+    <g fill="url(#tokamak-shell-grad)" stroke="#9B7CFF" stroke-opacity="0.3" stroke-width="1.5">
+      <path d="M 60 300 C 60 120, 540 120, 540 300 C 540 480, 60 480, 60 300 Z
+               M 180 300 C 180 390, 420 390, 420 300 C 420 210, 180 210, 180 300 Z" fill-rule="evenodd" />
+    </g>
+
+    <!-- Glowing Thick Center Current Core Line (Running through the plasma heart) -->
+    <!-- Back Pass (Dashed/Subdued) -->
+    <path d="M 120 300 C 120 165, 480 165, 480 300" fill="none" stroke="#FFB84D" stroke-width="6" opacity="0.35" stroke-dasharray="8 6" />
+    <!-- Front Pass (Glowing Primary Core) -->
+    <path d="M 120 300 C 120 435, 480 435, 480 300" fill="none" stroke="url(#center-current-grad)" stroke-width="8" stroke-linecap="round" filter="url(#glow-orange)" />
+    <path d="M 120 300 C 120 435, 480 435, 480 300" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+
+    <!-- Front Structural Envelope Lines -->
+    <ellipse cx="300" cy="300" rx="240" ry="135" fill="none" stroke="#9B7CFF" stroke-opacity="0.35" stroke-width="1.5" />
+    <ellipse cx="300" cy="300" rx="120" ry="65" fill="none" stroke="#9B7CFF" stroke-opacity="0.35" stroke-width="1.5" />
+
+    <!-- Front Poloidal Cross Sections (Clean Geometry) -->
+    <g stroke="#35D6FF" stroke-width="2" fill="none" opacity="0.8" filter="url(#glow-cyan)">
+      <path d="M 130 220 C 95 240, 95 360, 130 380" />
+      <path d="M 470 220 C 505 240, 505 360, 470 380" />
+      <path d="M 230 145 C 185 175, 185 425, 230 455" opacity="0.5" />
+      <path d="M 370 145 C 415 175, 415 425, 370 455" opacity="0.5" />
+    </g>
+  </g>
+
+  <!-- ================= CENTRAL DIVIDER LINE (Minimalist Visual Separation) ================= -->
+  <line x1="600" y1="120" x2="600" y2="480" stroke="#9B7CFF" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="4 8" />
+
+  <!-- ================= RIGHT SIDE: IRREGULARLY-TWISTED STELLARATOR WITH EXTERNAL COILS ================= -->
+  <g transform="translate(600, 0)">
+    <!-- Twisted Plasma Shell (Non-axisymmetric Helical Geometry) -->
+    <g fill="url(#stellarator-shell-grad)" stroke="#9B7CFF" stroke-opacity="0.4" stroke-width="1.5">
+      <!-- Asymmetric, lobed twisting torus contours -->
+      <path d="M 60 300 
+               C 50 200, 120 110, 260 130 
+               C 360 145, 420 110, 520 190 
+               C 580 240, 560 360, 480 430 
+               C 380 510, 200 480, 100 420 
+               C 60 395, 70 340, 60 300 Z
+               M 190 300 
+               C 180 230, 240 200, 310 220 
+               C 370 235, 400 220, 420 270 
+               C 435 310, 390 360, 330 370 
+               C 250 385, 200 350, 190 300 Z" fill-rule="evenodd" />
+    </g>
+
+    <!-- Internal Helical Axis Line (Soft Violet Ribbon Core) -->
+    <path d="M 125 300 
+             C 120 220, 200 170, 300 175 
+             C 400 180, 470 160, 500 230 
+             C 530 300, 460 410, 370 420 
+             C 260 430, 130 380, 125 300" 
+          fill="none" stroke="#9B7CFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4" opacity="0.7" filter="url(#glow-violet)" />
+
+    <!-- Complex Non-Planar External Magnetic Coils (Glowing Cyan & Warm Orange) -->
+    <!-- Coil 1 (Far Left - Twisted Cyan) -->
+    <path d="M 100 210 C 40 230, 70 370, 135 380 C 185 390, 150 200, 100 210 Z" 
+          fill="none" stroke="#35D6FF" stroke-width="3.5" stroke-linecap="round" filter="url(#glow-cyan)" />
+
+    <!-- Coil 2 (Top Left - Off-axis Orange) -->
+    <path d="M 190 130 C 170 70, 310 110, 310 180 C 310 240, 200 170, 190 130 Z" 
+          fill="none" stroke="#FFB84D" stroke-width="3.5" stroke-linecap="round" filter="url(#glow-orange)" />
+
+    <!-- Coil 3 (Top Center-Right - Saddle Shape Cyan) -->
+    <path d="M 330 115 C 410 70, 460 170, 420 230 C 380 280, 270 140, 330 115 Z" 
+          fill="none" stroke="#35D6FF" stroke-width="3.5" stroke-linecap="round" filter="url(#glow-cyan)" />
+
+    <!-- Coil 4 (Far Right - Twisted Lobed Orange) -->
+    <path d="M 480 180 C 580 190, 570 340, 490 380 C 420 420, 430 220, 480 180 Z" 
+          fill="none" stroke="#FFB84D" stroke-width="3.5" stroke-linecap="round" filter="url(#glow-orange)" />
+
+    <!-- Coil 5 (Bottom Right - Non-Planar Cyan) -->
+    <path d="M 420 370 C 490 440, 360 510, 300 450 C 250 400, 370 320, 420 370 Z" 
+          fill="none" stroke="#35D6FF" stroke-width="3.5" stroke-linecap="round" filter="url(#glow-cyan)" />
+
+    <!-- Coil 6 (Bottom Left - Twisted Orange) -->
+    <path d="M 230 440 C 150 500, 70 390, 150 330 C 210 280, 280 400, 230 440 Z" 
+          fill="none" stroke="#FFB84D" stroke-width="3.5" stroke-linecap="round" filter="url(#glow-orange)" />
+
+    <!-- Secondary Interstitial Coil Rings (Adding Modular Detail Depth) -->
+    <g stroke="#9B7CFF" stroke-width="1.8" fill="none" opacity="0.6">
+      <path d="M 140 160 C 100 120, 220 100, 230 180" />
+      <path d="M 260 110 C 290 60, 380 110, 360 190" />
+      <path d="M 420 140 C 510 110, 520 220, 460 260" />
+      <path d="M 520 270 C 580 320, 480 430, 420 390" />
+      <path d="M 330 450 C 260 510, 190 430, 220 370" />
+      <path d="M 120 380 C 50 340, 100 240, 150 260" />
+    </g>
+  </g>
+</svg>
