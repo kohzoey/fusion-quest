@@ -134,6 +134,7 @@ export const module2: ModuleContent = {
       explanation:
         "Nuclei repel each other because they're both positively charged. To fuse, they need to get extremely close — close enough for a much stronger, but very short-range, force to take over. Higher temperature means the nuclei have, on average, more kinetic energy, increasing the chance that they can get close enough for fusion to occur.",
       misconception: "Temperature doesn't \"break\" or \"destroy\" the Coulomb barrier — it increases the chance particles get close enough despite it.",
+      visual: { kind: "diagram", ref: "/illustrations/m2-coulomb-barrier.svg", alt: "Side-by-side: on the left, two positively-charged nuclei repelling each other with outward force arrows; on the right, the same nuclei extremely close together as a much stronger short-range force overtakes the repulsion" },
     },
     {
       id: "tunnelling",
@@ -142,6 +143,7 @@ export const module2: ModuleContent = {
         "At the Sun's core temperature, most nuclei do not have enough classical energy to overcome the Coulomb barrier directly. Quantum tunnelling gives a small probability that some nuclei can pass through the barrier anyway.",
       misconception:
         "Tunnelling is a chance, not a guarantee — never \"nuclei always tunnel through,\" \"tunnelling removes the barrier,\" or \"tunnelling guarantees fusion.\"",
+      visual: { kind: "diagram", ref: "/illustrations/m2-tunnelling.svg", alt: "A nucleus approaching a smooth energy-barrier hill, with most paths bouncing off the barrier while one single faint glowing path passes through it, emphasizing rarity over certainty" },
     },
     {
       id: "dt-fusion",
@@ -151,12 +153,14 @@ export const module2: ModuleContent = {
       misconception:
         "\"Fusion fuel is abundant\" is an oversimplification — deuterium and tritium have genuinely different resource stories and should never be collapsed into one blanket claim.",
       source: { label: "IAEA Physics Section, \"Fusion Basics\"; World Nuclear Association, \"Nuclear Fusion Power\"", type: "primary" },
+      visual: { kind: "diagram", ref: "/illustrations/m2-dt-fusion.svg", alt: "A deuterium nucleus and a tritium nucleus merging into a helium nucleus plus a separate escaping neutron, with a soft burst of light at the moment of fusion" },
     },
     {
       id: "mass-defect",
       title: "Where Does the Energy Come From?",
       explanation:
         "The particles produced by the reaction weigh very slightly less, combined, than the particles that went in. That \"missing\" mass doesn't disappear — it becomes the energy released, following Einstein's famous equation.",
+      visual: { kind: "diagram", ref: "/illustrations/m2-mass-defect.svg", alt: "A balance scale: the left side holds the reactant nuclei (slightly heavier), the right side holds the fusion products (slightly lighter), with a glowing wisp rising from the missing-mass gap representing mass converting to energy" },
     },
     {
       id: "three-conditions",
@@ -164,6 +168,7 @@ export const module2: ModuleContent = {
       explanation:
         "Fusion needs all three things working together: hot enough, dense enough, and held together long enough. Missing any one means the others can't make up for it on their own.\n\nPressure is closely related to a plasma's density and temperature — physically, it's what you get when you combine the two. In fusion research, conditions are usually described using density, temperature, and confinement time directly (rather than pressure as a separate variable), which is exactly why Fusion Lab uses those three quantities.",
       misconception: "\"Temperature alone is enough\" — density and confinement time matter just as much, and none of the three can compensate fully for the others.",
+      visual: { kind: "diagram", ref: "/illustrations/m2-three-conditions.svg", alt: "Three glowing icons — a thermometer, a cluster of dots, and an hourglass — connected by lines converging into a single glowing point, representing three conditions combining together" },
     },
     {
       id: "lawson-triple-product",
@@ -172,6 +177,7 @@ export const module2: ModuleContent = {
         "The Lawson criteria set the minimum plasma temperature and the minimum density × confinement time needed for useful fusion performance. The triple product is the single number scientists calculate from density, temperature, and confinement time to check how demanding those conditions are.\n\nTriple product tells us about plasma conditions. It is not the same as Q or electrical efficiency — those measure something different, which Module 5 explains when it covers real experiments like NIF.",
       misconception: "\"Triple product = Q\" — the triple product describes plasma conditions; Q is an energy ratio at a specified accounting boundary. They are not interchangeable.",
       source: { label: "J.D. Lawson (1955); Wurzel & Hsu, Physics of Plasmas 29, 062103 (2022)", type: "primary" },
+      visual: { kind: "diagram", ref: "/illustrations/m2-lawson-triple-product.svg", alt: "The same three condition icons flowing into a single glowing orb, with a faint threshold line the orb is approaching but has not yet crossed" },
     },
     {
       id: "fusion-lab-intro",
@@ -212,6 +218,7 @@ export const module3: ModuleContent = {
       explanation:
         "At very high temperatures, atoms don't stay whole — electrons get stripped away from their nuclei. What's left is a mix of charged particles called plasma. Because plasma is charged, unlike ordinary gas, it responds to magnetic fields — and that turns out to be exactly the tool needed to control it.",
       misconception: "Plasma is not just \"very hot gas\" — the charged-particle property is the entire reason the rest of this module exists.",
+      visual: { kind: "diagram", ref: "/illustrations/m3-what-is-plasma.svg", alt: "An atom losing its outer electron and transforming into a cloud of separated charged particles, illustrating ionization into plasma" },
     },
     {
       id: "why-not-a-container",
@@ -219,6 +226,7 @@ export const module3: ModuleContent = {
       explanation:
         "No practical solid material can withstand direct, sustained contact with fusion-temperature plasma. Instead, fusion systems are built around a different idea: confinement — keeping the hottest plasma away from any material surface at all, rather than trying to build something that can touch it and survive.",
       misconception: "Fusion reactors do not have \"a container that can withstand 100 million °C\" — that would be scientifically misleading.",
+      visual: { kind: "diagram", ref: "/illustrations/m3-why-not-a-container.svg", alt: "A glowing plasma core shown clearly not touching the walls of a surrounding container outline, with a visible gap between them" },
     },
     {
       id: "magnetic-confinement",
@@ -233,6 +241,7 @@ export const module3: ModuleContent = {
       explanation:
         "A tokamak doesn't just wrap a magnetic field around in one simple loop. It combines two field directions — one running the long way around the machine (toroidal), one running the short way around the tube's cross-section (poloidal) — and together they create a field that spirals, like a twisting ribbon, around the machine. That helical structure helps confine and control the plasma.",
       misconception: "The helical field structure does not eliminate plasma instabilities or guarantee stable operation — see the next stage's discussion of tokamak disruptions.",
+      visual: { kind: "diagram", ref: "/illustrations/m3-field-geometry.svg", alt: "A torus shape with two sets of glowing field lines wrapping around it in different directions, combining into a visible spiral pattern representing the helical magnetic field" },
     },
     {
       id: "tokamak-vs-stellarator",
@@ -241,6 +250,7 @@ export const module3: ModuleContent = {
         "Tokamaks and stellarators are trying to solve the same problem — producing that twisting magnetic field — in two different ways. A tokamak drives a large electric current through the plasma itself to help create part of the field. That's technically simpler, and it's why tokamaks are the most mature, most tested fusion design — but that internal current can also trigger sudden disruptions, and it makes continuous operation harder. A stellarator does not rely on a large internal plasma current, giving it an inherent advantage for steady-state operation and far fewer disruptions — but building the precisely-shaped 3D coils needed to replace that current is an extremely difficult engineering problem in its own right.",
       misconception: "Neither design is simply \"the best\" — and stellarators have far fewer disruptions, not zero instabilities.",
       source: { label: "Comparative review, Matter and Radiation at Extremes (AIP Publishing, 2016); EUROfusion Stellarator Power Plant Studies", type: "primary" },
+      visual: { kind: "diagram", ref: "/illustrations/m3-tokamak-vs-stellarator.svg", alt: "Side-by-side comparison of a symmetric tokamak shape with an internal current line, and a more complex twisted stellarator shape with external coils, shown with equal visual weight" },
     },
     {
       id: "two-paths",
@@ -248,6 +258,7 @@ export const module3: ModuleContent = {
       explanation:
         "Everything so far in this module — tokamaks, stellarators — uses magnetic confinement: holding a relatively large amount of plasma in place with magnetic fields for a meaningful stretch of time. Inertial confinement takes a completely different approach: instead of holding plasma steady, it compresses a tiny capsule of fuel so fast and so hard that fusion conditions are briefly reached before the capsule has time to fly apart. One real device using this approach is the National Ignition Facility (NIF) in the United States, which uses powerful lasers to do the compressing — we'll look at NIF's actual results properly in Module 5.",
       misconception: "Inertial confinement does not keep plasma confined for a long time — its confinement timescale is extremely short, the opposite of magnetic confinement's approach.",
+      visual: { kind: "diagram", ref: "/illustrations/m3-two-paths.svg", alt: "Side-by-side comparison of a large glowing ring representing sustained magnetic confinement, and a tiny sphere being compressed from multiple directions representing brief inertial confinement" },
     },
     {
       id: "engineering-reality",
@@ -255,6 +266,7 @@ export const module3: ModuleContent = {
       explanation:
         "Even a well-confined plasma creates enormous engineering problems for the machine around it. Components near the plasma face intense heat and must be actively cooled to survive. D-T fusion also produces high-energy neutrons — and unlike the charged plasma particles, magnetic fields don't confine neutrons, so they travel outward and strike the surrounding materials directly, causing gradual damage over the machine's lifetime. The divertor helps remove unwanted particles and impurities from the plasma edge while managing intense heat and particle loads — but heat and particle exhaust remains one of the hardest unsolved problems in fusion engineering, not a solved one. And even once all of this works in a research device, turning that into a reliable, continuously operating power plant is a completely separate engineering challenge of its own.",
       misconception: "The divertor does not remove all the heat, and fusion research has not \"already solved confinement\" — the gap between an experimental demonstration and practical power generation remains real.",
+      visual: { kind: "diagram", ref: "/illustrations/m3-engineering-reality.svg", alt: "A tokamak cross-section with arrows pointing outward from the plasma edge toward the surrounding wall, representing heat and neutron flux reaching the machine's structure" },
     },
   ],
   flagshipInteraction: { component: "TokamakDiagram", config: tokamakComponents },
@@ -289,6 +301,7 @@ export const module4: ModuleContent = {
       explanation:
         "Fusion doesn't produce electricity directly, the way a battery does. Like most conventional thermal power sources, it would produce heat first. That heat would be carried away by a coolant, used to produce steam (or drive another power cycle), which spins a turbine connected to a generator — and that's what actually produces electricity. Fusion's real difference from other power sources isn't the last few steps — it's how the heat gets made in the first place.",
       misconception: "Fusion does not directly produce electricity, and it is not electrically different from other thermal power sources in its conversion chain — only in its heat source.",
+      visual: { kind: "diagram", ref: "/illustrations/m4-energy-to-electricity.svg", alt: "A left-to-right flow diagram showing a glowing energy core, a coolant pipe, a spinning turbine, and a lightning bolt, representing the chain from fusion heat to electricity" },
     },
     {
       id: "why-interested",
@@ -296,6 +309,7 @@ export const module4: ModuleContent = {
       explanation:
         "So why is so much research going into this? A few reasons: fusion releases enormous energy from a very small amount of fuel. Its fuel resources are potentially abundant. Unlike burning coal, oil, or gas, the fusion reaction itself doesn't release CO₂. And if it can be made to work reliably, fusion could offer a steady, always-available power source — a useful complement to solar and wind, which depend on weather and time of day, rather than necessarily a replacement for them.",
       misconception: "Fusion is framed here as a potential complement to renewables, not a straightforward replacement for them.",
+      visual: { kind: "diagram", ref: "/illustrations/m4-why-interested.svg", alt: "Four icons in a row representing energy density, water resources, low emissions, and steady output" },
     },
     {
       id: "fuel-reality",
@@ -304,6 +318,7 @@ export const module4: ModuleContent = {
         "Fusion's most common near-term fuel combination — deuterium and tritium — has two very different resource stories. Deuterium is abundant, extractable from ordinary water. Tritium is radioactive and not naturally abundant in any useful quantity — future D-T fusion power plants would need to produce much of their own tritium by using lithium-containing breeding blankets. That means lithium becomes just as important to fusion's fuel story as deuterium. And having abundant fuel resources doesn't automatically make fusion easy — the engineering challenges covered in Module 3 remain, regardless of fuel availability.",
       misconception: "\"Fusion fuel is abundant\" as a single, unqualified statement is an oversimplification — deuterium and tritium's resource stories must always be kept separate.",
       source: { label: "IAEA Physics Section; World Nuclear Association, \"Nuclear Fusion Power\"; ITER Organization", type: "primary" },
+      visual: { kind: "diagram", ref: "/illustrations/m4-fuel-reality.svg", alt: "Two droplet icons connected by a dashed line to a lithium-crystal shape, representing deuterium from water and tritium produced separately from lithium" },
     },
     {
       id: "waste-impact",
@@ -311,6 +326,7 @@ export const module4: ModuleContent = {
       explanation:
         "Fusion does not produce the same kind of high-activity, long-lived radioactive waste associated with fission, but that does not mean fusion produces no radioactive waste. D-T fusion produces energetic neutrons that can activate materials around the reactor. Tritium is also radioactive and must be carefully handled. Future fusion plants would therefore still need systems for radioactive-material management, even though their waste profile would be different from that of fission.",
       misconception: "Never \"fusion produces no radioactive material\" or \"fusion is zero waste\" — the correct claim is specific and narrower than that.",
+      visual: { kind: "diagram", ref: "/illustrations/m4-waste-impact.svg", alt: "Two containment-symbol icons of different size and glow duration, representing different waste profiles without implying either produces none" },
     },
     {
       id: "intrinsic-safety",
@@ -318,6 +334,7 @@ export const module4: ModuleContent = {
       explanation:
         "A fusion plasma cannot undergo a self-sustaining runaway chain reaction the way a fission reactor's fuel can — the instant confinement is disrupted, the reaction simply stops. This is different from saying fusion carries no risk at all: it means one specific, well-understood failure mode (meltdown) does not apply, not that every possible risk is eliminated.",
       misconception: "The single highest-risk stage in this module for oversimplification — never \"fusion is completely safe,\" \"fusion has zero risk,\" or \"fusion cannot cause serious accidents.\"",
+      visual: { kind: "diagram", ref: "/illustrations/m4-intrinsic-safety.svg", alt: "Side-by-side comparison of an escalating uncontrolled chain-reaction symbol and a single glowing core that fades immediately when its containment ring breaks" },
     },
     {
       id: "could-fusion-power-world",
@@ -325,6 +342,7 @@ export const module4: ModuleContent = {
       explanation:
         "If fusion's engineering challenges can eventually be solved at commercial scale, what role could it play? Electricity demand keeps growing, and grids benefit from reliable, steady power sources that don't depend on weather. Fusion could potentially fill that role, working alongside solar, wind, and other low-carbon sources rather than replacing them outright. But it's important to be honest about where this stands: this is a future possibility being actively researched, not an established fact.",
       misconception: "This is a genuinely open question, not a near-certain outcome — \"could\" and \"possible\" are load-bearing words here.",
+      visual: { kind: "diagram", ref: "/illustrations/m4-could-fusion-power-world.svg", alt: "A stylised city skyline with scattered glowing nodes representing varied power sources, and a small question-mark shape above, keeping the tone speculative" },
     },
     {
       id: "reality-check",
@@ -362,6 +380,7 @@ export const module5: ModuleContent = {
         "ITER, under construction in France, is the largest fusion experiment in the world — a collaboration between over 30 countries. It's a tokamak, built to demonstrate that fusion reactions can produce substantially more power than is used to heat the plasma, at a scale relevant to a future power plant. ITER is an experimental facility, not a commercial power plant — it isn't designed to sell electricity to anyone. As of mid-2026, ITER's tokamak core is roughly two-thirds assembled. Under ITER's current schedule, 2034 marks the Start of Research Operation — the beginning of a research phase using hydrogen plasmas, progressively building up toward more demanding conditions. Deuterium-deuterium fusion operation is targeted for 2035, full magnetic energy for 2036, and full deuterium-tritium fusion operation — the actual fusion fuel — isn't targeted to begin until 2039. Those are current project targets, not guarantees — this schedule has already shifted once, and fusion megaprojects have a track record of further schedule changes.",
       misconception: "\"ITER is a commercial power plant\" and \"2034 is when ITER starts fusing deuterium and tritium\" are both false — 2034 is the start of an earlier-stage hydrogen research phase.",
       source: { label: "ITER Organization (\"A Few Lines\", 2024 baseline); Physics World; World Nuclear News", type: "primary", date: "2026" },
+      visual: { kind: "diagram", ref: "/illustrations/m5-iter.svg", alt: "A large donut-shaped tokamak outline shown partially complete, with some structural segments solid and others still outlined, conveying a facility still under construction" },
     },
     {
       id: "nif",
@@ -370,6 +389,7 @@ export const module5: ModuleContent = {
         "You already learned the basic idea of inertial confinement fusion in Module 3 — lasers compressing a tiny fuel target instead of magnets confining a large plasma. NIF, in the United States, has repeatedly demonstrated something significant: fusion energy released by the target exceeding the laser energy delivered to that target. As of NIF's most recent public results (June 2026), the facility has now achieved this kind of ignition result eleven times, with its best shot producing about 7.9 megajoules of fusion energy — roughly 3.8 times the laser energy delivered to the target. That's a genuinely major scientific achievement. But it's a target-level result, not a whole-facility result: NIF's laser system itself draws vastly more electricity from the grid than the laser energy it delivers to the target, so this result does not mean NIF is producing net electricity, and it isn't a commercial reactor.",
       misconception: "\"NIF produced more energy than the entire facility consumed\" is not supported — only the narrower target-level claim is.",
       source: { label: "LLNL, \"Achieving Fusion Ignition\"", type: "primary", date: "June 2026" },
+      visual: { kind: "diagram", ref: "/illustrations/m5-nif.svg", alt: "Multiple converging laser beams focusing onto a tiny central glowing target sphere, with a faint outline of the much larger surrounding facility structure" },
     },
     {
       id: "private-race",
@@ -378,6 +398,7 @@ export const module5: ModuleContent = {
         "Alongside these public megaprojects, private companies are racing to build their own fusion machines — often with much more aggressive timelines. Commonwealth Fusion Systems (CFS), a spinout from MIT, is building a tokamak called SPARC using powerful high-temperature superconducting magnets. As of mid-2026, CFS's own estimate is that SPARC's construction is almost 80% complete, with the company targeting \"first plasma\" (the machine's first operational test) in 2027, aiming to reach net energy gain (Q greater than 1) as soon as possible after that. CFS has separately announced plans for a follow-on commercial plant, ARC, targeting electricity delivery in the early 2030s — that's a company target, not a demonstrated result. Helion is taking a very different approach: instead of a donut-shaped tokamak, it uses a pulsed, linear device design. In February 2026, Helion reported that its Polaris prototype had demonstrated measurable deuterium-tritium (D-T) fusion — the same fuel combination used by ITER and CFS — while also reaching plasma temperatures of 150 million °C, both described by the company as industry firsts for a private fusion machine. That D-T result is a step in Polaris's testing program, not Helion's commercial fuel choice: Helion's longer-term commercial approach is intended to use a different fuel combination (deuterium and helium-3), aiming to convert fusion energy directly into electricity without a separate steam turbine. As of the most recent independent reporting, Helion's reported results do not constitute net energy gain or net electricity production. Helion has a supply agreement with Microsoft, and is targeting initial operations for its Orion fusion plant in 2028 — that is a company/project target and commercial commitment, not yet a demonstrated result.",
       misconception: "Every timeline in this stage (2027, 2028, early 2030s) is a company target, not an achieved result — and Polaris's demonstrated D-T fusion must not be confused with Helion's separate, longer-term D-He-3 commercial fuel goal.",
       source: { label: "CFS (CEO statements, company blog); Helion Energy press release; World Nuclear Association", type: "companyReported", date: "2026" },
+      visual: { kind: "diagram", ref: "/illustrations/m5-private-race.svg", alt: "Two different abstract machine silhouettes shown mid-construction side by side, a compact tokamak-style shape and a linear pulsed-tube shape, with no size or ranking implied" },
     },
     {
       id: "compare",
@@ -392,6 +413,7 @@ export const module5: ModuleContent = {
       title: "Breakthrough ≠ Power Plant",
       explanation:
         "Module 4 already covered the system-level gap between fusion physics and a commercial power plant — sustained operation, durable materials, a working fuel cycle, heat extraction, maintenance, and economics. None of the four projects you just compared has closed that entire gap yet, no matter how impressive their individual milestones are. A breakthrough can prove that one important piece of the puzzle works — without proving the whole puzzle is solved.",
+      visual: { kind: "diagram", ref: "/illustrations/m5-breakthrough-vs-plant.svg", alt: "An ascending pathway with glowing checkpoints near the start and fading, unlit checkpoints further along, ending in an outlined, unlit shape representing a complete, not-yet-reached power plant" },
     },
     {
       id: "read-a-headline",
