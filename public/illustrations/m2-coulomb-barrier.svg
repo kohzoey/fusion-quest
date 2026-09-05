@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Soft Glow Filters -->
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" opacity="0.85" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Vector Arrowhead Markers for Repulsion -->
+    <marker id="arrow-violet-left" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 10 1.5 L 2 5 L 10 8.5 z" fill="#9B7CFF" />
+    </marker>
+
+    <marker id="arrow-violet-right" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#9B7CFF" />
+    </marker>
+  </defs>
+
+  <!-- NOTE: TRANSPARENT BACKGROUND (No background rect or fill) -->
+
+  <!-- Center Split Line (Museum Poster Layout Divider) -->
+  <line x1="600" y1="90" x2="600" y2="585" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="6 6" />
+
+  <!-- ==================== LEFT SIDE: COULOMB REPULSION ==================== -->
+  <g id="electrostatic-repulsion">
+    <!-- Abstract Orbital Field Alignment Lines -->
+    <g stroke="#35D6FF" stroke-width="1" opacity="0.12" fill="none">
+      <circle cx="300" cy="337.5" r="220" stroke-dasharray="4 8" />
+      <line x1="100" y1="337.5" x2="500" y2="337.5" stroke-dasharray="4 4" />
+    </g>
+
+    <!-- Outward Repulsive Force Arrow Vectors -->
+    <path d="M 180 337.5 L 90 337.5" fill="none" stroke="#9B7CFF" stroke-width="2.5" marker-end="url(#arrow-violet-left)" filter="url(#glow-violet)" />
+    <path d="M 420 337.5 L 510 337.5" fill="none" stroke="#9B7CFF" stroke-width="2.5" marker-end="url(#arrow-violet-right)" filter="url(#glow-violet)" />
+
+    <!-- Opposing Repulsion Field Wave Arc Accents -->
+    <path d="M 280 287.5 Q 295 337.5 280 387.5" fill="none" stroke="#9B7CFF" stroke-width="2" stroke-linecap="round" opacity="0.75" filter="url(#glow-violet)" />
+    <path d="M 320 287.5 Q 305 337.5 320 387.5" fill="none" stroke="#9B7CFF" stroke-width="2" stroke-linecap="round" opacity="0.75" filter="url(#glow-violet)" />
+
+    <!-- Left Nucleus 1 (Positively Charged Sphere) -->
+    <g transform="translate(210, 337.5)">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+      <circle cx="0" cy="0" r="20" fill="#35D6FF" fill-opacity="0.3" />
+      <!-- (+) Positive Charge Geometry Symbol -->
+      <line x1="-8" y1="0" x2="8" y2="0" stroke="#35D6FF" stroke-width="2" stroke-linecap="round" />
+      <line x1="0" y1="-8" x2="0" y2="8" stroke="#35D6FF" stroke-width="2" stroke-linecap="round" />
+    </g>
+
+    <!-- Left Nucleus 2 (Positively Charged Sphere) -->
+    <g transform="translate(390, 337.5)">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+      <circle cx="0" cy="0" r="20" fill="#35D6FF" fill-opacity="0.3" />
+      <!-- (+) Positive Charge Geometry Symbol -->
+      <line x1="-8" y1="0" x2="8" y2="0" stroke="#35D6FF" stroke-width="2" stroke-linecap="round" />
+      <line x1="0" y1="-8" x2="0" y2="8" stroke="#35D6FF" stroke-width="2" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT SIDE: STRONG NUCLEAR FORCE OVERTAKING ==================== -->
+  <g id="strong-force-attraction">
+    <!-- Abstract Cosmic Grid Alignments -->
+    <g stroke="#35D6FF" stroke-width="1" opacity="0.12" fill="none">
+      <circle cx="900" cy="337.5" r="220" stroke-dasharray="4 8" />
+    </g>
+
+    <!-- Tight Short-Range Strong Force Binding Ring (Overtaking Force) -->
+    <!-- Outer Intense Binding Aura -->
+    <circle cx="900" cy="337.5" r="85" fill="#FFB84D" fill-opacity="0.08" filter="url(#glow-gold)" />
+    <circle cx="900" cy="337.5" r="68" fill="none" stroke="#FFB84D" stroke-width="4" filter="url(#glow-gold)" />
+    
+    <!-- Concentric High-Energy Interaction Field -->
+    <circle cx="900" cy="337.5" r="54" fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.8" />
+    <circle cx="900" cy="337.5" r="42" fill="#FFB84D" fill-opacity="0.25" filter="url(#glow-gold)" />
+
+    <!-- Inward Binding Force Direction Vectors -->
+    <g stroke="#FFB84D" stroke-width="2" opacity="0.85" stroke-linecap="round">
+      <line x1="800" y1="337.5" x2="825" y2="337.5" filter="url(#glow-gold)" />
+      <line x1="1000" y1="337.5" x2="975" y2="337.5" filter="url(#glow-gold)" />
+      <line x1="900" y1="237.5" x2="900" y2="262.5" filter="url(#glow-gold)" />
+      <line x1="900" y1="437.5" x2="900" y2="412.5" filter="url(#glow-gold)" />
+    </g>
+
+    <!-- Right Nucleus 1 (Extremely Close) -->
+    <g transform="translate(872, 337.5)">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#35D6FF" stroke-width="2.5" filter="url(#glow-cyan)" />
+      <circle cx="0" cy="0" r="20" fill="#FFB84D" fill-opacity="0.5" filter="url(#glow-gold)" />
+      <!-- (+) Positive Charge Symbol -->
+      <line x1="-8" y1="0" x2="8" y2="0" stroke="#35D6FF" stroke-width="2" stroke-linecap="round" />
+      <line x1="0" y1="-8" x2="0" y2="8" stroke="#35D6FF" stroke-width="2" stroke-linecap="round" />
+    </g>
+
+    <!-- Right Nucleus 2 (Extremely Close) -->
+    <g transform="translate(928, 337.5)">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#35D6FF" stroke-width="2.5" filter="url(#glow-cyan)" />
+      <circle cx="0" cy="0" r="20" fill="#FFB84D" fill-opacity="0.5" filter="url(#glow-gold)" />
+      <!-- (+) Positive Charge Symbol -->
+      <line x1="-8" y1="0" x2="8" y2="0" stroke="#35D6FF" stroke-width="2" stroke-linecap="round" />
+      <line x1="0" y1="-8" x2="0" y2="8" stroke="#35D6FF" stroke-width="2" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>
