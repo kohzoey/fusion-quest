@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Soft Glow Filters -->
+    <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" opacity="0.8" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Vector Arrowhead Markers -->
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#35D6FF" />
+    </marker>
+  </defs>
+
+  <!-- Dark Navy Background -->
+  <rect width="1200" height="675" fill="#07111F" />
+
+  <!-- Center Split Line (Museum Poster Layout Divider) -->
+  <line x1="600" y1="90" x2="600" y2="585" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.2" stroke-dasharray="6 6" />
+
+  <!-- ==================== LEFT SIDE: LINEAR PLASMA COLUMN (PINCH) ==================== -->
+  <g id="linear-pinch">
+    <!-- Orbital/Grid Background Accent -->
+    <circle cx="300" cy="337.5" r="220" fill="none" stroke="#9B7CFF" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="4 8" />
+
+    <!-- Linear Vertical Plasma Column Core -->
+    <!-- Outer Plasma Aura -->
+    <rect x="270" y="137.5" width="60" height="400" rx="30" fill="#FFB84D" fill-opacity="0.15" filter="url(#glow-gold)" />
+    <!-- Inner Squeezed Plasma Core -->
+    <rect x="282" y="137.5" width="36" height="400" rx="18" fill="none" stroke="#FFB84D" stroke-width="2.5" filter="url(#glow-gold)" />
+    <rect x="288" y="137.5" width="24" height="400" rx="12" fill="#FFB84D" fill-opacity="0.8" filter="url(#glow-gold)" />
+
+    <!-- Surrounding Curved Magnetic Squeezing Field Lines (Cyan Vectors) -->
+    <!-- Magnetic Line Left Outer -->
+    <path d="M 220 167.5 Q 260 337.5 220 507.5" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+    <!-- Magnetic Line Left Inner (Squeezing) -->
+    <path d="M 245 147.5 Q 275 337.5 245 527.5" fill="none" stroke="#35D6FF" stroke-width="2.5" filter="url(#glow-cyan)" />
+    
+    <!-- Magnetic Line Right Inner (Squeezing) -->
+    <path d="M 355 147.5 Q 325 337.5 355 527.5" fill="none" stroke="#35D6FF" stroke-width="2.5" filter="url(#glow-cyan)" />
+    <!-- Magnetic Line Right Outer -->
+    <path d="M 380 167.5 Q 340 337.5 380 507.5" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+
+    <!-- Inward Pinch Force Vector Arrows -->
+    <path d="M 200 337.5 L 260 337.5" fill="none" stroke="#35D6FF" stroke-width="2" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)" />
+    <path d="M 400 337.5 L 340 337.5" fill="none" stroke="#35D6FF" stroke-width="2" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)" />
+    <path d="M 215 237.5 L 265 247.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
+    <path d="M 385 237.5 L 335 247.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
+    <path d="M 215 437.5 L 265 427.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
+    <path d="M 385 437.5 L 335 427.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
+  </g>
+
+  <!-- ==================== RIGHT SIDE: TOROIDAL TOKAMAK SHAPE ==================== -->
+  <g id="toroidal-tokamak">
+    <!-- Grid/Axis Alignments -->
+    <circle cx="900" cy="337.5" r="220" fill="none" stroke="#35D6FF" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="4 8" />
+
+    <!-- Tokamak Outer Shield Shell (Soft Violet) -->
+    <path d="M 900 137.5 
+             C 1030 137.5, 1110 217.5, 1110 337.5 
+             C 1110 457.5, 1030 537.5, 900 537.5 
+             C 770 537.5, 690 457.5, 690 337.5 
+             C 690 217.5, 770 137.5, 900 137.5 Z 
+             M 900 237.5 
+             C 840 237.5, 790 277.5, 790 337.5 
+             C 790 397.5, 840 437.5, 900 437.5 
+             C 960 437.5, 1010 397.5, 1010 337.5 
+             C 1010 277.5, 960 237.5, 900 237.5 Z" 
+          fill="none" stroke="#9B7CFF" stroke-width="3" filter="url(#glow-violet)" />
+
+    <!-- Tokamak Toroidal Coils / Structural Ribs -->
+    <ellipse cx="740" cy="337.5" rx="20" ry="100" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+    <ellipse cx="1060" cy="337.5" rx="20" ry="100" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+    <ellipse cx="900" cy="187.5" rx="100" ry="20" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+    <ellipse cx="900" cy="487.5" rx="100" ry="20" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+
+    <!-- Inner Toroidal Plasma Ring (Glowing Gold Closed Loop) -->
+    <path d="M 900 187.5 
+             C 990 187.5, 1050 247.5, 1050 337.5 
+             C 1050 427.5, 990 487.5, 900 487.5 
+             C 810 487.5, 750 427.5, 750 337.5 
+             C 750 247.5, 810 187.5, 900 187.5 Z" 
+          fill="none" stroke="#FFB84D" stroke-width="12" fill-opacity="0.1" filter="url(#glow-gold)" opacity="0.3" />
+
+    <path d="M 900 187.5 
+             C 990 187.5, 1050 247.5, 1050 337.5 
+             C 1050 427.5, 990 487.5, 900 487.5 
+             C 810 487.5, 750 427.5, 750 337.5 
+             C 750 247.5, 810 187.5, 900 187.5 Z" 
+          fill="none" stroke="#FFB84D" stroke-width="4" filter="url(#glow-gold)" />
+
+    <!-- Magnetic Field Helical Axis Line (Cyan Dashed Torus Core) -->
+    <path d="M 900 212.5 
+             C 970 212.5, 1025 262.5, 1025 337.5 
+             C 1025 412.5, 970 462.5, 900 462.5 
+             C 830 462.5, 775 412.5, 775 337.5 
+             C 775 262.5, 830 212.5, 900 212.5 Z" 
+          fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.8" />
+  </g>
+</svg>
