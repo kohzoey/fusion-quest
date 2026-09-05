@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Soft Glow Filters -->
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" opacity="0.85" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Vector Arrowhead Markers -->
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#35D6FF" />
+    </marker>
+
+    <marker id="arrow-violet" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#9B7CFF" />
+    </marker>
+
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#FFB84D" />
+    </marker>
+  </defs>
+
+  <!-- NOTE: TRANSPARENT BACKGROUND (No background rect or fill) -->
+
+  <!-- Abstract Grid & Orbital Trajectory Guides -->
+  <g stroke="#35D6FF" stroke-width="1" opacity="0.12" fill="none">
+    <circle cx="500" cy="337.5" r="240" stroke-dasharray="4 8" />
+    <line x1="100" y1="337.5" x2="1100" y2="337.5" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- ==================== INCOMING NUCLEI (DEUTERIUM & TRITIUM) ==================== -->
+  <!-- Deuterium Nucleus (Top Left: 1 Proton + 1 Neutron represented by 2 Dot Pattern) -->
+  <g id="deuterium" transform="translate(200, 210)">
+    <!-- Motion Vector Path -->
+    <path d="M 40 20 L 220 100" fill="none" stroke="#35D6FF" stroke-width="2" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)" />
+    
+    <!-- Outer Outer Boundary Circle -->
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+    <circle cx="0" cy="0" r="24" fill="#35D6FF" fill-opacity="0.2" />
+    
+    <!-- Dot Pattern: 2 Sub-particles -->
+    <circle cx="-9" cy="0" r="8" fill="#35D6FF" />
+    <circle cx="9" cy="0" r="8" fill="none" stroke="#35D6FF" stroke-width="2" />
+  </g>
+
+  <!-- Tritium Nucleus (Bottom Left: 1 Proton + 2 Neutrons represented by 3 Dot Pattern) -->
+  <g id="tritium" transform="translate(200, 465)">
+    <!-- Motion Vector Path -->
+    <path d="M 40 -20 L 220 -100" fill="none" stroke="#9B7CFF" stroke-width="2" marker-end="url(#arrow-violet)" filter="url(#glow-violet)" />
+    
+    <!-- Outer Boundary Circle -->
+    <circle cx="0" cy="0" r="36" fill="none" stroke="#9B7CFF" stroke-width="2" filter="url(#glow-violet)" />
+    <circle cx="0" cy="0" r="28" fill="#9B7CFF" fill-opacity="0.2" />
+    
+    <!-- Dot Pattern: 3 Triangular Sub-particles -->
+    <circle cx="0" cy="-10" r="8" fill="#9B7CFF" />
+    <circle cx="-10" cy="8" r="8" fill="none" stroke="#9B7CFF" stroke-width="2" />
+    <circle cx="10" cy="8" r="8" fill="none" stroke="#9B7CFF" stroke-width="2" />
+  </g>
+
+  <!-- ==================== MERGING MOMENT (SOFT BURST OF LIGHT) ==================== -->
+  <g id="reaction-burst" transform="translate(500, 337.5)">
+    <!-- Outer Diffuse Radial Heat Aura -->
+    <circle cx="0" cy="0" r="120" fill="#FFB84D" fill-opacity="0.06" filter="url(#glow-gold)" />
+    <circle cx="0" cy="0" r="85" fill="#FFB84D" fill-opacity="0.15" filter="url(#glow-gold)" />
+
+    <!-- Minimal Geometrical Energy Rays -->
+    <g stroke="#FFB84D" stroke-width="2" opacity="0.75" stroke-linecap="round" filter="url(#glow-gold)">
+      <line x1="0" y1="-95" x2="0" y2="-65" />
+      <line x1="0" y1="65" x2="0" y2="95" />
+      <line x1="-95" y1="0" x2="-65" y2="0" />
+      <line x1="65" y1="0" x2="95" y2="0" />
+      <line x1="-67" y1="-67" x2="-45" y2="-45" />
+      <line x1="45" y1="45" x2="67" y2="67" />
+      <line x1="-67" y1="67" x2="-45" y2="45" />
+      <line x1="45" y1="-45" x2="67" y2="-67" />
+    </g>
+
+    <!-- Reaction Core Flash Boundary -->
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#FFB84D" stroke-width="3" filter="url(#glow-gold)" />
+    <circle cx="0" cy="0" r="32" fill="#FFB84D" fill-opacity="0.8" filter="url(#glow-gold)" />
+  </g>
+
+  <!-- ==================== OUTGOING PRODUCTS ==================== -->
+  <!-- Helium Nucleus (Top Right: 4 Particles Dot Pattern) -->
+  <g id="helium-4" transform="translate(860, 220)">
+    <!-- Outgoing Velocity Vector -->
+    <path d="M -180 60 L -60 20" fill="none" stroke="#FFB84D" stroke-width="2.5" marker-end="url(#arrow-gold)" filter="url(#glow-gold)" />
+
+    <!-- Helium Core Outer Halo -->
+    <circle cx="0" cy="0" r="52" fill="#FFB84D" fill-opacity="0.1" filter="url(#glow-gold)" />
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#FFB84D" stroke-width="3" filter="url(#glow-gold)" />
+    <circle cx="0" cy="0" r="30" fill="#FFB84D" fill-opacity="0.3" />
+
+    <!-- Dot Pattern: 2 Protons + 2 Neutrons Grid -->
+    <circle cx="-10" cy="-10" r="8" fill="#FFB84D" />
+    <circle cx="10" cy="-10" r="8" fill="none" stroke="#FFB84D" stroke-width="2" />
+    <circle cx="-10" cy="10" r="8" fill="none" stroke="#FFB84D" stroke-width="2" />
+    <circle cx="10" cy="10" r="8" fill="#FFB84D" />
+  </g>
+
+  <!-- Escaping High-Energy Neutron (Bottom Right: Single Small Dot) -->
+  <g id="released-neutron" transform="translate(920, 460)">
+    <!-- Outgoing Fast Vector -->
+    <path d="M -240 -70 L -60 -20" fill="none" stroke="#35D6FF" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)" />
+
+    <!-- Small Escaping Particle Halo -->
+    <circle cx="0" cy="0" r="22" fill="#35D6FF" fill-opacity="0.15" filter="url(#glow-cyan)" />
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+    <!-- Single Neutral Dot Core -->
+    <circle cx="0" cy="0" r="6" fill="#35D6FF" />
+  </g>
+</svg>
