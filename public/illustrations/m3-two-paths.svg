@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-orange" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-intense" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="3" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="torus-shell-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9B7CFF" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#9B7CFF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#35D6FF" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="laser-cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#35D6FF" stop-opacity="0.2" />
+      <stop offset="70%" stop-color="#35D6FF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <linearGradient id="laser-violet-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B7CFF" stop-opacity="0.2" />
+      <stop offset="70%" stop-color="#9B7CFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <radialGradient id="core-fusion-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="25%" stop-color="#FFB84D" />
+      <stop offset="65%" stop-color="#9B7CFF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#35D6FF" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Arrow Marker -->
+    <marker id="beam-head" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#FFB84D" />
+    </marker>
+  </defs>
+
+  <!-- ================= LEFT SIDE: MAGNETIC CONFINEMENT (SUSTAINED TORUS) ================= -->
+  <g transform="translate(0, 0)">
+    <!-- Outer Magnetic Field Shell Guidelines -->
+    <ellipse cx="300" cy="300" rx="220" ry="120" fill="none" stroke="#9B7CFF" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="3 6" />
+    <ellipse cx="300" cy="300" rx="110" ry="60" fill="none" stroke="#9B7CFF" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="3 6" />
+
+    <!-- Back Poloidal Coils (Thin Cyan Rings Behind Torus) -->
+    <g stroke="#35D6FF" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="4 4">
+      <ellipse cx="140" cy="300" rx="35" ry="75" transform="rotate(-15 140 300)" />
+      <ellipse cx="210" cy="225" rx="33" ry="70" transform="rotate(-35 210 225)" />
+      <ellipse cx="300" cy="190" rx="30" ry="65" transform="rotate(-65 300 190)" />
+      <ellipse cx="390" cy="225" rx="33" ry="70" transform="rotate(35 390 225)" />
+      <ellipse cx="460" cy="300" rx="35" ry="75" transform="rotate(15 460 300)" />
+    </g>
+
+    <!-- Main Torus Body Shell -->
+    <g fill="url(#torus-shell-grad)" stroke="#9B7CFF" stroke-opacity="0.35" stroke-width="1.5">
+      <path d="M 80 300 C 80 140, 520 140, 520 300 C 520 460, 80 460, 80 300 Z
+               M 190 300 C 190 380, 410 380, 410 300 C 410 220, 190 220, 190 300 Z" fill-rule="evenodd" />
+    </g>
+
+    <!-- Continuous Spiraling Magnetic Field Lines (Helical Helix Lines) -->
+    <!-- Back Pass -->
+    <g stroke="#9B7CFF" stroke-width="2" fill="none" opacity="0.4" stroke-dasharray="4 3">
+      <path d="M 80 300 C 90 200, 200 180, 240 300" />
+      <path d="M 270 300 C 290 200, 400 190, 430 300" />
+      <path d="M 460 300 C 480 190, 510 230, 520 300" />
+    </g>
+    <!-- Front Pass (Glowing Helical Ribbon) -->
+    <g stroke="#35D6FF" stroke-width="2.5" fill="none" stroke-linecap="round" filter="url(#glow-cyan)" opacity="0.85">
+      <path d="M 240 300 C 280 410, 90 390, 80 300" />
+      <path d="M 430 300 C 450 400, 250 400, 270 300" />
+      <path d="M 520 300 C 510 390, 430 400, 460 300" />
+    </g>
+
+    <!-- Glowing Plasma Core Stream (Sustained Continuous Ring) -->
+    <path d="M 135 300 C 135 415, 465 415, 465 300" fill="none" stroke="#FFB84D" stroke-width="6" stroke-linecap="round" filter="url(#glow-orange)" />
+    <path d="M 135 300 C 135 415, 465 415, 465 300" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" opacity="0.9" />
+    
+    <path d="M 135 300 C 135 185, 465 185, 465 300" fill="none" stroke="#FFB84D" stroke-width="3" opacity="0.3" stroke-dasharray="6 6" />
+
+    <!-- Front Poloidal Field Loops -->
+    <g stroke="#FFB84D" stroke-width="2" fill="none" opacity="0.8" filter="url(#glow-orange)">
+      <path d="M 145 230 C 115 250, 115 350, 145 370" />
+      <path d="M 455 230 C 485 250, 485 350, 455 370" />
+      <path d="M 230 160 C 190 185, 190 415, 230 440" opacity="0.4" />
+      <path d="M 370 160 C 410 185, 410 415, 370 440" opacity="0.4" />
+    </g>
+  </g>
+
+  <!-- ================= CENTRAL DIVIDER LINE ================= -->
+  <line x1="600" y1="100" x2="600" y2="500" stroke="#9B7CFF" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="4 8" />
+
+  <!-- ================= RIGHT SIDE: INERTIAL CONFINEMENT (COMPRESSED SPHERE) ================= -->
+  <g transform="translate(600, 0)">
+    <!-- Outer Target Frame / Alignment Guides (Concentric Geometry) -->
+    <circle cx="300" cy="300" r="210" fill="none" stroke="#9B7CFF" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="2 4" />
+    <circle cx="300" cy="300" r="150" fill="none" stroke="#35D6FF" stroke-opacity="0.2" stroke-width="1" />
+    <circle cx="300" cy="300" r="90" fill="none" stroke="#FFB84D" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="4 4" />
+
+    <!-- Converging Laser Beams / Driver Waves (12 Symmetric Axes) -->
+    <!-- Top / Bottom / Left / Right Main Drivers -->
+    <g stroke-linecap="round">
+      <!-- Beam 1: Top Direct -->
+      <polygon points="293,90 307,90 302,240 298,240" fill="url(#laser-cyan-grad)" filter="url(#glow-cyan)" />
+      <!-- Beam 2: Bottom Direct -->
+      <polygon points="293,510 307,510 302,360 298,360" fill="url(#laser-cyan-grad)" filter="url(#glow-cyan)" />
+      <!-- Beam 3: Left Direct -->
+      <polygon points="90,293 90,307 240,302 240,298" fill="url(#laser-cyan-grad)" filter="url(#glow-cyan)" />
+      <!-- Beam 4: Right Direct -->
+      <polygon points="510,293 510,307 360,302 360,298" fill="url(#laser-cyan-grad)" filter="url(#glow-cyan)" />
+
+      <!-- Diagonal Beams (Soft Violet Accent) -->
+      <!-- Top-Left -->
+      <polygon points="152,142 162,152 258,252 252,258" fill="url(#laser-violet-grad)" filter="url(#glow-violet)" />
+      <!-- Top-Right -->
+      <polygon points="448,142 438,152 342,252 348,258" fill="url(#laser-violet-grad)" filter="url(#glow-violet)" />
+      <!-- Bottom-Left -->
+      <polygon points="152,458 162,448 258,348 252,342" fill="url(#laser-violet-grad)" filter="url(#glow-violet)" />
+      <!-- Bottom-Right -->
+      <polygon points="448,458 438,448 342,348 348,342" fill="url(#laser-violet-grad)" filter="url(#glow-violet)" />
+    </g>
+
+    <!-- Compression Force Vector Arrows (Inward Pressure) -->
+    <g stroke="#FFB84D" stroke-width="2" fill="none" opacity="0.9" filter="url(#glow-orange)">
+      <line x1="300" y1="190" x2="300" y2="230" marker-end="url(#beam-head)" />
+      <line x1="300" y1="410" x2="300" y2="370" marker-end="url(#beam-head)" />
+      <line x1="190" y1="300" x2="230" y2="300" marker-end="url(#beam-head)" />
+      <line x1="410" y1="300" x2="370" y2="300" marker-end="url(#beam-head)" />
+
+      <line x1="222" y1="222" x2="250" y2="250" marker-end="url(#beam-head)" />
+      <line x1="378" y1="222" x2="350" y2="250" marker-end="url(#beam-head)" />
+      <line x1="222" y1="378" x2="250" y2="350" marker-end="url(#beam-head)" />
+      <line x1="378" y1="378" x2="350" y2="350" marker-end="url(#beam-head)" />
+    </g>
+
+    <!-- Outer Ablation Shockwave Shell (Imploding Plasma Envelope) -->
+    <circle cx="300" cy="300" r="55" fill="none" stroke="#35D6FF" stroke-width="2" stroke-dasharray="6 4" opacity="0.8" filter="url(#glow-cyan)" />
+    <circle cx="300" cy="300" r="42" fill="none" stroke="#FFB84D" stroke-width="1.5" stroke-opacity="0.9" />
+
+    <!-- Core Shockwave Geometry / Energy Rays -->
+    <g stroke="#9B7CFF" stroke-width="1.5" opacity="0.6">
+      <line x1="300" y1="250" x2="300" y2="350" />
+      <line x1="250" y1="300" x2="350" y2="300" />
+      <line x1="265" y1="265" x2="335" y2="335" />
+      <line x1="335" y1="265" x2="265" y2="335" />
+    </g>
+
+    <!-- Super-Compressed Ultra-Dense Hotspot Core (Tiny Intense Glowing Sphere) -->
+    <!-- Outer Glow Aura -->
+    <circle cx="300" cy="300" r="30" fill="url(#core-fusion-grad)" filter="url(#glow-intense)" />
+    <!-- Mid Plasma Density Layer -->
+    <circle cx="300" cy="300" r="16" fill="#FFB84D" filter="url(#glow-orange)" />
+    <!-- Ultra-Dense Core Center -->
+    <circle cx="300" cy="300" r="7" fill="#FFFFFF" filter="url(#glow-cyan)" />
+  </g>
+</svg>
