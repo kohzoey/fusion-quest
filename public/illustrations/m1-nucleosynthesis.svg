@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Soft Radial Glow Filters -->
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" opacity="0.8" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Vector Arrowhead Markers -->
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#35D6FF" />
+    </marker>
+
+    <marker id="arrow-violet" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#9B7CFF" />
+    </marker>
+
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#FFB84D" />
+    </marker>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="675" fill="#07111F" />
+
+  <!-- Subtle Geometric Grid / Orbit Baseline (Museum Poster Aesthetic) -->
+  <g stroke="#35D6FF" stroke-width="1" opacity="0.12" fill="none">
+    <path d="M 100 480 Q 300 480 460 380 T 800 280 T 1050 337.5" stroke-dasharray="4 6" />
+    <circle cx="1020" cy="337.5" r="160" stroke-dasharray="6 6" />
+  </g>
+
+  <!-- ==================== MULTI-STEP REACTION CHAIN ==================== -->
+
+  <!-- STEP 1: Initial Cold Nucleus (Far Left) -->
+  <g id="step-1">
+    <circle cx="120" cy="480" r="18" fill="none" stroke="#35D6FF" stroke-width="2" />
+    <circle cx="120" cy="480" r="12" fill="#35D6FF" fill-opacity="0.25" />
+  </g>
+
+  <!-- Connection Arrow 1 -> 2 -->
+  <path d="M 148 470 C 200 450, 230 430, 272 410" fill="none" stroke="#35D6FF" stroke-width="2" marker-end="url(#arrow-cyan)" />
+
+  <!-- STEP 2: Secondary Fusing State (Soft Cyan Glow) -->
+  <g id="step-2">
+    <circle cx="300" cy="398" r="24" fill="none" stroke="#35D6FF" stroke-width="2.5" filter="url(#glow-cyan)" />
+    <circle cx="300" cy="398" r="16" fill="#35D6FF" fill-opacity="0.4" />
+  </g>
+
+  <!-- Connection Arrow 2 -> 3 -->
+  <path d="M 334 382 C 390 355, 430 335, 482 320" fill="none" stroke="#9B7CFF" stroke-width="2" marker-end="url(#arrow-violet)" />
+
+  <!-- STEP 3: Intermediate Energy State (Soft Violet Glow) -->
+  <g id="step-3">
+    <circle cx="515" cy="312" r="32" fill="none" stroke="#9B7CFF" stroke-width="2.5" filter="url(#glow-violet)" />
+    <circle cx="515" cy="312" r="22" fill="#9B7CFF" fill-opacity="0.45" />
+  </g>
+
+  <!-- Connection Arrow 3 -> 4 -->
+  <path d="M 557 305 C 630 295, 690 295, 752 302" fill="none" stroke="#FFB84D" stroke-width="2.5" marker-end="url(#arrow-gold)" />
+
+  <!-- STEP 4: High-Energy Precursor State (Warmer Gold Glow) -->
+  <g id="step-4">
+    <circle cx="790" cy="310" r="42" fill="none" stroke="#FFB84D" stroke-width="3" filter="url(#glow-gold)" />
+    <circle cx="790" cy="310" r="28" fill="#FFB84D" fill-opacity="0.5" />
+  </g>
+
+  <!-- Final Vector Step 4 -> Terminal Core -->
+  <path d="M 842 318 Q 880 326, 920 332" fill="none" stroke="#FFB84D" stroke-width="3" marker-end="url(#arrow-gold)" />
+
+  <!-- ==================== TERMINAL REACTION CORE (FAR RIGHT) ==================== -->
+  <g id="terminal-core">
+    <!-- Outer Intense Glow Auras -->
+    <circle cx="1020" cy="337.5" r="95" fill="#FFB84D" fill-opacity="0.06" filter="url(#glow-gold)" />
+    <circle cx="1020" cy="337.5" r="75" fill="#FFB84D" fill-opacity="0.12" filter="url(#glow-gold)" />
+    
+    <!-- Concentric Reaction Boundary Ring -->
+    <circle cx="1020" cy="337.5" r="58" fill="none" stroke="#FFB84D" stroke-width="3.5" filter="url(#glow-gold)" />
+    <circle cx="1020" cy="337.5" r="48" fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.6" />
+    
+    <!-- Core Energetic Center -->
+    <circle cx="1020" cy="337.5" r="38" fill="#FFB84D" fill-opacity="0.85" filter="url(#glow-gold)" />
+  </g>
+
+  <!-- Minimal Decorative Vector Accents (Subtle Energy Release Dots) -->
+  <g id="released-particles">
+    <circle cx="1080" cy="230" r="4" fill="#35D6FF" filter="url(#glow-cyan)" />
+    <circle cx="1120" cy="380" r="5" fill="#9B7CFF" filter="url(#glow-violet)" />
+    <circle cx="980" cy="450" r="3.5" fill="#FFB84D" filter="url(#glow-gold)" />
+  </g>
+</svg>
