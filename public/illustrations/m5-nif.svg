@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- High-contrast Glow Filters for Dark Backgrounds -->
+    <filter id="laserGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur1" />
+      <feGaussianBlur stdDeviation="10" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="coreGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="18" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Radial Gradients for Beam Cones -->
+    <radialGradient id="targetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFB84D" stop-opacity="1" />
+      <stop offset="30%" stop-color="#FFB84D" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#9B7CFF" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#35D6FF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- FAINT OUTLINE OF LARGE FACILITY (Scale Difference Context) -->
+  <g id="facilityStructure" fill="none" opacity="0.35">
+    <!-- Outer Target Chamber Sphere / Facility Rings -->
+    <circle cx="600" cy="400" r="340" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="8 6" />
+    <circle cx="600" cy="400" r="350" stroke="#9B7CFF" stroke-width="0.75" />
+    <circle cx="600" cy="400" r="320" stroke="#35D6FF" stroke-width="0.5" opacity="0.5" />
+    
+    <!-- Facility Axis Crosshairs & Geometry Lines -->
+    <line x1="150" y1="400" x2="1050" y2="400" stroke="#35D6FF" stroke-width="0.75" stroke-dasharray="12 6" />
+    <line x1="600" y1="30" x2="600" y2="770" stroke="#35D6FF" stroke-width="0.75" stroke-dasharray="12 6" />
+    
+    <!-- Structural Ports / Laser Entry Port Marks -->
+    <circle cx="600" cy="60" r="6" stroke="#35D6FF" stroke-width="1.5" fill="none" />
+    <circle cx="600" cy="740" r="6" stroke="#35D6FF" stroke-width="1.5" fill="none" />
+    <circle cx="260" cy="400" r="6" stroke="#35D6FF" stroke-width="1.5" fill="none" />
+    <circle cx="940" cy="400" r="6" stroke="#35D6FF" stroke-width="1.5" fill="none" />
+    <circle cx="359" cy="159" r="6" stroke="#9B7CFF" stroke-width="1.5" fill="none" />
+    <circle cx="841" cy="159" r="6" stroke="#9B7CFF" stroke-width="1.5" fill="none" />
+    <circle cx="359" cy="641" r="6" stroke="#9B7CFF" stroke-width="1.5" fill="none" />
+    <circle cx="841" cy="641" r="6" stroke="#9B7CFF" stroke-width="1.5" fill="none" />
+  </g>
+
+  <!-- FOCUSED BEAM CONES (Geometric Transparent Fill) -->
+  <g id="beamCones" opacity="0.25">
+    <polygon points="600,400 359,159 400,120" fill="#35D6FF" />
+    <polygon points="600,400 841,159 800,120" fill="#35D6FF" />
+    <polygon points="600,400 359,641 400,680" fill="#35D6FF" />
+    <polygon points="600,400 841,641 800,680" fill="#35D6FF" />
+    <polygon points="600,400 570,60 630,60" fill="#FFB84D" />
+    <polygon points="600,400 570,740 630,740" fill="#FFB84D" />
+    <polygon points="600,400 260,370 260,430" fill="#35D6FF" />
+    <polygon points="600,400 940,370 940,430" fill="#35D6FF" />
+  </g>
+
+  <!-- CONVERGING LASER BEAM LINES -->
+  <g id="laserBeams" stroke-linecap="round" filter="url(#laserGlow)">
+    <!-- Primary Cyan Laser Beams -->
+    <line x1="120" y1="120" x2="600" y2="400" stroke="#35D6FF" stroke-width="2.5" />
+    <line x1="1080" y1="120" x2="600" y2="400" stroke="#35D6FF" stroke-width="2.5" />
+    <line x1="120" y1="680" x2="600" y2="400" stroke="#35D6FF" stroke-width="2.5" />
+    <line x1="1080" y1="680" x2="600" y2="400" stroke="#35D6FF" stroke-width="2.5" />
+
+    <line x1="359" y1="159" x2="600" y2="400" stroke="#35D6FF" stroke-width="2" />
+    <line x1="841" y1="159" x2="600" y2="400" stroke="#35D6FF" stroke-width="2" />
+    <line x1="359" y1="641" x2="600" y2="400" stroke="#35D6FF" stroke-width="2" />
+    <line x1="841" y1="641" x2="600" y2="400" stroke="#35D6FF" stroke-width="2" />
+
+    <line x1="260" y1="400" x2="600" y2="400" stroke="#35D6FF" stroke-width="2" />
+    <line x1="940" y1="400" x2="600" y2="400" stroke="#35D6FF" stroke-width="2" />
+
+    <!-- Secondary Soft Violet Accent Beams -->
+    <line x1="220" y1="260" x2="600" y2="400" stroke="#9B7CFF" stroke-width="1.5" />
+    <line x1="980" y1="260" x2="600" y2="400" stroke="#9B7CFF" stroke-width="1.5" />
+    <line x1="220" y1="540" x2="600" y2="400" stroke="#9B7CFF" stroke-width="1.5" />
+    <line x1="980" y1="540" x2="600" y2="400" stroke="#9B7CFF" stroke-width="1.5" />
+
+    <!-- High-Energy Warm Gold Accent Beams (Top/Bottom Main Drivers) -->
+    <line x1="600" y1="60" x2="600" y2="400" stroke="#FFB84D" stroke-width="3" />
+    <line x1="600" y1="740" x2="600" y2="400" stroke="#FFB84D" stroke-width="3" />
+    <line x1="480" y1="80" x2="600" y2="400" stroke="#FFB84D" stroke-width="2" />
+    <line x1="720" y1="80" x2="600" y2="400" stroke="#FFB84D" stroke-width="2" />
+    <line x1="480" y1="720" x2="600" y2="400" stroke="#FFB84D" stroke-width="2" />
+    <line x1="720" y1="720" x2="600" y2="400" stroke="#FFB84D" stroke-width="2" />
+  </g>
+
+  <!-- TINY CENTRAL TARGET CAPSULE & IGNITION GLOW -->
+  <g id="targetZone">
+    <!-- Outer Plasma Aura -->
+    <circle cx="600" cy="400" r="45" fill="url(#targetGlow)" />
+    <circle cx="600" cy="400" r="25" fill="#9B7CFF" opacity="0.3" filter="url(#coreGlow)" />
+    
+    <!-- Hohlraum Geometric Outline Hint (Microscopic Scale Indicator) -->
+    <rect x="588" y="376" width="24" height="48" rx="4" fill="none" stroke="#9B7CFF" stroke-width="1.5" opacity="0.8" />
+    <line x1="588" y1="388" x2="612" y2="388" stroke="#35D6FF" stroke-width="1" opacity="0.6" />
+    <line x1="588" y1="412" x2="612" y2="412" stroke="#35D6FF" stroke-width="1" opacity="0.6" />
+
+    <!-- Central Fusion Pellet / Glowing Core -->
+    <circle cx="600" cy="400" r="8" fill="#FFB84D" filter="url(#coreGlow)" />
+    <circle cx="600" cy="400" r="4" fill="#FFFFFF" />
+  </g>
+
+  <!-- SCALE INDICATOR GRAPHICS (Educational / Museum Aesthetic) -->
+  <g id="scaleIndicators" stroke-opacity="0.6">
+    <!-- Facility Radius Callout -->
+    <line x1="600" y1="400" x2="826" y2="174" stroke="#35D6FF" stroke-width="0.75" stroke-dasharray="3 3" />
+    <circle cx="826" cy="174" r="3" fill="#35D6FF" />
+    
+    <!-- Target Core Zoom Reticle -->
+    <circle cx="600" cy="400" r="16" fill="none" stroke="#FFB84D" stroke-width="1" stroke-dasharray="4 2" opacity="0.8" filter="url(#laserGlow)" />
+    <line x1="600" y1="378" x2="600" y2="382" stroke="#FFB84D" stroke-width="1" />
+    <line x1="600" y1="418" x2="600" y2="422" stroke="#FFB84D" stroke-width="1" />
+    <line x1="578" y1="400" x2="582" y2="400" stroke="#FFB84D" stroke-width="1" />
+    <line x1="618" y1="400" x2="622" y2="400" stroke="#FFB84D" stroke-width="1" />
+  </g>
+</svg>
