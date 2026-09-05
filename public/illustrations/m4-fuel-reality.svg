@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-orange" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Arrowhead Marker for Breeding Relationship -->
+    <marker id="arrow-breed" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#FFB84D" />
+    </marker>
+  </defs>
+
+  <g transform="translate(0, 0)">
+    <!-- ================= CONNECTING LINES ================= -->
+    <!-- Dashed connection line from Lithium Crystal (Source) to Tritium Molecule -->
+    <path d="M 720 300 C 620 300, 560 300, 480 300" fill="none" stroke="#FFB84D" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#arrow-breed)" opacity="0.85" filter="url(#glow-orange)" />
+
+    <!-- Subdued linking line showing the pair relationship between Deuterium and Tritium -->
+    <path d="M 230 220 C 280 220, 280 380, 330 380" fill="none" stroke="#9B7CFF" stroke-width="1.5" opacity="0.4" stroke-dasharray="3 4" />
+
+    <!-- ================= 1. DEUTERIUM ICON (LEFT - WATER DROPLET / MOLECULE) ================= -->
+    <g transform="translate(200, 200)">
+      <!-- Geometric Orbit & Water Wave Guide Ring -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#9B7CFF" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="3 6" />
+      <ellipse cx="0" cy="30" rx="55" ry="16" fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5" />
+
+      <!-- Glowing Deuterium Water Droplet Shape -->
+      <path d="M 0 -58 
+               C 28 -15, 45 10, 45 26 
+               A 45 45 0 0 1 -45 26 
+               C -45 10, -28 -15, 0 -58 Z" 
+            fill="none" stroke="#35D6FF" stroke-width="3" stroke-linejoin="round" filter="url(#glow-cyan)" />
+            
+      <path d="M 0 -32 
+               C 15 -5, 24 10, 24 20 
+               A 24 24 0 0 1 -24 20 
+               C -24 10, -15 -5, 0 -32 Z" 
+            fill="#35D6FF" opacity="0.3" filter="url(#glow-cyan)" />
+
+      <!-- Nucleus Detail (Deuterium: 1 Proton + 1 Neutron) -->
+      <circle cx="-7" cy="18" r="8" fill="#35D6FF" filter="url(#glow-cyan)" />
+      <circle cx="7" cy="18" r="8" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.9" />
+
+      <!-- Bright Droplet Highlight -->
+      <path d="M -22 10 A 28 28 0 0 1 -10 -15" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+    </g>
+
+    <!-- ================= 2. TRITIUM ICON (CENTER-LEFT - BRED MOLECULE) ================= -->
+    <g transform="translate(400, 400)">
+      <!-- Geometric Orbit Guide Ring -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#9B7CFF" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="3 6" />
+
+      <!-- Outer Radiation/Activation Ring -->
+      <circle cx="0" cy="0" r="55" fill="none" stroke="#FFB84D" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 4" />
+
+      <!-- Glowing Molecule Enclosure (Tritium) -->
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#FFB84D" stroke-width="2.8" filter="url(#glow-orange)" />
+      <circle cx="0" cy="0" r="42" fill="#FFB84D" opacity="0.1" />
+
+      <!-- Nucleus Detail (Tritium: 1 Proton + 2 Neutrons) -->
+      <circle cx="0" cy="-10" r="8.5" fill="#35D6FF" filter="url(#glow-cyan)" />
+      <circle cx="-10" cy="8" r="8.5" fill="#FFB84D" filter="url(#glow-orange)" />
+      <circle cx="10" cy="8" r="8.5" fill="#FFB84D" filter="url(#glow-orange)" />
+      <circle cx="0" cy="-10" r="8.5" fill="none" stroke="#FFFFFF" stroke-width="1.8" opacity="0.9" />
+    </g>
+
+    <!-- ================= 3. LITHIUM CRYSTAL ICON (RIGHT - BREEDING SOURCE) ================= -->
+    <g transform="translate(800, 300)">
+      <!-- Geometric Alignment Guide Circle -->
+      <circle cx="0" cy="0" r="95" fill="none" stroke="#9B7CFF" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="3 6" />
+      <circle cx="0" cy="0" r="70" fill="none" stroke="#35D6FF" stroke-opacity="0.2" stroke-width="1" />
+
+      <!-- Crystalline Lattice Background Accent Rays -->
+      <g stroke="#9B7CFF" stroke-width="1.2" opacity="0.4">
+        <line x1="-65" y1="0" x2="65" y2="0" stroke-dasharray="2 4" />
+        <line x1="0" y1="-65" x2="0" y2="65" stroke-dasharray="2 4" />
+        <line x1="-45" y1="-45" x2="45" y2="45" stroke-dasharray="2 4" />
+        <line x1="-45" y1="45" x2="45" y2="-45" stroke-dasharray="2 4" />
+      </g>
+
+      <!-- Stylized Geometric Lithium Crystal (Multi-Faceted) -->
+      <!-- Back Facets -->
+      <polygon points="0,-65 40,-25 0,15" fill="#9B7CFF" opacity="0.25" />
+      <polygon points="0,-65 -40,-25 0,15" fill="#9B7CFF" opacity="0.15" />
+      
+      <!-- Front Outer Crystal Edges -->
+      <polygon points="0,-65 50,-20 35,45 0,65 -35,45 -50,-20" fill="none" stroke="#FFB84D" stroke-width="2.8" stroke-linejoin="round" filter="url(#glow-orange)" />
+
+      <!-- Inner Facet Lines -->
+      <g stroke="#FFB84D" stroke-width="1.8" fill="none" stroke-linejoin="round" opacity="0.95" filter="url(#glow-orange)">
+        <line x1="0" y1="-65" x2="0" y2="65" />
+        <line x1="-50" y1="-20" x2="0" y2="15" />
+        <line x1="50" y1="-20" x2="0" y2="15" />
+        <line x1="-35" y1="45" x2="0" y2="15" />
+        <line x1="35" y1="45" x2="0" y2="15" />
+      </g>
+
+      <!-- Crystal Core Glow Nodes -->
+      <circle cx="0" cy="15" r="5" fill="#FFFFFF" filter="url(#glow-cyan)" />
+      <circle cx="0" cy="-65" r="3.5" fill="#FFB84D" filter="url(#glow-orange)" />
+      <circle cx="50" cy="-20" r="3.5" fill="#35D6FF" filter="url(#glow-cyan)" />
+      <circle cx="-50" cy="-20" r="3.5" fill="#35D6FF" filter="url(#glow-cyan)" />
+      <circle cx="35" cy="45" r="3.5" fill="#9B7CFF" filter="url(#glow-violet)" />
+      <circle cx="-35" cy="45" r="3.5" fill="#9B7CFF" filter="url(#glow-violet)" />
+      <circle cx="0" cy="65" r="3.5" fill="#FFB84D" filter="url(#glow-orange)" />
+    </g>
+  </g>
+</svg>
