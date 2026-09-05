@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Soft Radial Glow Filters -->
+    <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" opacity="0.85" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark Navy Background -->
+  <rect width="1200" height="675" fill="#07111F" />
+
+  <!-- Abstract Cosmic Grid & Orbital Dispersal Lines -->
+  <g stroke="#35D6FF" stroke-width="1" opacity="0.12" fill="none">
+    <circle cx="350" cy="337.5" r="180" stroke-dasharray="4 6" />
+    <circle cx="350" cy="337.5" r="320" stroke-dasharray="8 8" />
+    <path d="M 350 337.5 Q 600 200, 950 150" stroke-dasharray="6 6" />
+    <path d="M 350 337.5 Q 650 337.5, 1050 337.5" stroke-dasharray="6 6" />
+    <path d="M 350 337.5 Q 600 475, 980 520" stroke-dasharray="6 6" />
+  </g>
+
+  <!-- ==================== CENTRAL STELLAR CORE ==================== -->
+  <g id="stellar-core">
+    <!-- Outer Heat Aura -->
+    <circle cx="350" cy="337.5" r="140" fill="#FFB84D" fill-opacity="0.05" filter="url(#glow-gold)" />
+    <circle cx="350" cy="337.5" r="100" fill="#FFB84D" fill-opacity="0.12" filter="url(#glow-gold)" />
+
+    <!-- Minimal Geometrical Rays -->
+    <g stroke="#FFB84D" stroke-width="2" opacity="0.6" stroke-linecap="round">
+      <line x1="350" y1="180" x2="350" y2="150" />
+      <line x1="350" y1="495" x2="350" y2="525" />
+      <line x1="192.5" y1="337.5" x2="162.5" y2="337.5" />
+      <line x1="507.5" y1="337.5" x2="537.5" y2="337.5" />
+      <line x1="238.6" y1="226.1" x2="217.4" y2="204.9" />
+      <line x1="461.4" y1="448.9" x2="482.6" y2="470.1" />
+      <line x1="238.6" y1="448.9" x2="217.4" y2="470.1" />
+      <line x1="461.4" y1="226.1" x2="482.6" y2="204.9" />
+    </g>
+
+    <!-- Concentric Star Boundaries -->
+    <circle cx="350" cy="337.5" r="75" fill="none" stroke="#FFB84D" stroke-width="3" filter="url(#glow-gold)" />
+    <circle cx="350" cy="337.5" r="55" fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7" />
+    <circle cx="350" cy="337.5" r="40" fill="#FFB84D" fill-opacity="0.85" filter="url(#glow-gold)" />
+  </g>
+
+  <!-- ==================== DRIFTING ELEMENT SYMBOLS ==================== -->
+
+  <!-- Inner Zone Dispersal (Emerging Near Core) -->
+  <g id="dispersal-inner">
+    <!-- Light Element Symbol: Nested Dual Rings (Cyan) -->
+    <g transform="translate(560, 240)">
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+      <circle cx="0" cy="0" r="8" fill="#35D6FF" fill-opacity="0.4" />
+    </g>
+
+    <!-- Light Element Symbol: Minimal Triangle Core (Gold) -->
+    <g transform="translate(510, 420)">
+      <polygon points="0,-16 14,10 -14,10" fill="none" stroke="#FFB84D" stroke-width="2" filter="url(#glow-gold)" />
+      <circle cx="0" cy="0" r="4" fill="#FFB84D" />
+    </g>
+  </g>
+
+  <!-- Mid Zone Dispersal (Forming Elements) -->
+  <g id="dispersal-mid">
+    <!-- Mid Element Symbol: Concentric Diamond Geometry (Violet) -->
+    <g transform="translate(740, 180)">
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="none" stroke="#9B7CFF" stroke-width="2.5" filter="url(#glow-violet)" />
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#9B7CFF" fill-opacity="0.3" />
+    </g>
+
+    <!-- Mid Element Symbol: Hexagonal Vector Cluster (Cyan) -->
+    <g transform="translate(780, 337.5)">
+      <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+      <circle cx="0" cy="0" r="6" fill="#35D6FF" />
+    </g>
+
+    <!-- Mid Element Symbol: Crossed Orbital Axis (Soft Violet) -->
+    <g transform="translate(720, 480)">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="#9B7CFF" stroke-width="1.5" stroke-dasharray="4 4" />
+      <line x1="-24" y1="0" x2="24" y2="0" stroke="#9B7CFF" stroke-width="2" filter="url(#glow-violet)" />
+      <line x1="0" y1="-24" x2="0" y2="24" stroke="#9B7CFF" stroke-width="2" filter="url(#glow-violet)" />
+      <circle cx="0" cy="0" r="6" fill="#9B7CFF" />
+    </g>
+  </g>
+
+  <!-- Outer Zone Dispersal (Dispersed Heavy Elements) -->
+  <g id="dispersal-outer">
+    <!-- Heavy Element Symbol: Tri-Node Orbit (Cyan & Gold) -->
+    <g transform="translate(970, 140)">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+      <circle cx="0" cy="-28" r="5" fill="#35D6FF" filter="url(#glow-cyan)" />
+      <circle cx="24" cy="14" r="5" fill="#FFB84D" filter="url(#glow-gold)" />
+      <circle cx="-24" cy="14" r="5" fill="#35D6FF" filter="url(#glow-cyan)" />
+      <circle cx="0" cy="0" r="8" fill="#9B7CFF" fill-opacity="0.5" filter="url(#glow-violet)" />
+    </g>
+
+    <!-- Heavy Element Symbol: Quad Star/Square Composite (Gold) -->
+    <g transform="translate(1040, 337.5)">
+      <rect x="-18" y="-18" width="36" height="36" fill="none" stroke="#FFB84D" stroke-width="2" filter="url(#glow-gold)" />
+      <rect x="-12" y="-12" width="24" height="24" fill="#FFB84D" fill-opacity="0.25" transform="rotate(45)" />
+      <circle cx="0" cy="0" r="5" fill="#FFB84D" />
+    </g>
+
+    <!-- Heavy Element Symbol: Multi-Ring Core (Violet) -->
+    <g transform="translate(960, 520)">
+      <circle cx="0" cy="0" r="26" fill="none" stroke="#9B7CFF" stroke-width="2" filter="url(#glow-violet)" />
+      <circle cx="0" cy="0" r="16" fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="5 3" />
+      <circle cx="0" cy="0" r="7" fill="#9B7CFF" />
+    </g>
+  </g>
+
+  <!-- Minor Stardust Particle Accents -->
+  <g id="stardust">
+    <circle cx="480" cy="180" r="3" fill="#35D6FF" opacity="0.6" />
+    <circle cx="620" cy="300" r="2.5" fill="#FFB84D" opacity="0.8" />
+    <circle cx="660" cy="390" r="3" fill="#9B7CFF" opacity="0.5" />
+    <circle cx="860" cy="240" r="3.5" fill="#35D6FF" opacity="0.7" />
+    <circle cx="890" cy="440" r="2.5" fill="#FFB84D" opacity="0.9" />
+    <circle cx="1100" cy="220" r="3" fill="#9B7CFF" opacity="0.6" />
+  </g>
+</svg>
