@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-orange-intense" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="2" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Marker for Chain Reaction Branching Lines -->
+    <marker id="branch-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <circle cx="5" cy="5" r="3" fill="#FFB84D" />
+    </marker>
+  </defs>
+
+  <g transform="translate(0, 0)">
+    <!-- Central Axis Separator -->
+    <line x1="500" y1="100" x2="500" y2="500" stroke="#9B7CFF" stroke-width="1" opacity="0.25" stroke-dasharray="4 8" />
+
+    <!-- ================================================================= -->
+    <!-- LEFT SIDE: FISSION (UNCONTROLLED CHAIN REACTION / ESCALATION)     -->
+    <!-- ================================================================= -->
+    <g transform="translate(250, 300)">
+      <!-- Outer Boundary / Context Circle -->
+      <circle cx="0" cy="0" r="140" fill="none" stroke="#9B7CFF" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="3 6" />
+
+      <!-- Branching Lines (Escalating Outward) -->
+      <g stroke="#FFB84D" opacity="0.8" stroke-dasharray="3 3">
+        <!-- Tier 1 to Tier 2 -->
+        <line x1="-80" y1="0" x2="-20" y2="-40" stroke-width="1.5" />
+        <line x1="-80" y1="0" x2="-20" y2="40" stroke-width="1.5" />
+
+        <!-- Tier 2 to Tier 3 (Thicker/Brighter) -->
+        <line x1="-20" y1="-40" x2="50" y2="-80" stroke-width="2" />
+        <line x1="-20" y1="-40" x2="50" y2="-20" stroke-width="2" />
+        <line x1="-20" y1="40" x2="50" y2="20" stroke-width="2" />
+        <line x1="-20" y1="40" x2="50" y2="80" stroke-width="2" />
+
+        <!-- Escalating Spreads Beyond Frame -->
+        <line x1="50" y1="-80" x2="105" y2="-100" stroke-width="2.5" stroke="#FFFFFF" />
+        <line x1="50" y1="-80" x2="105" y2="-65" stroke-width="2.5" stroke="#FFFFFF" />
+        <line x1="50" y1="80" x2="105" y2="65" stroke-width="2.5" stroke="#FFFFFF" />
+        <line x1="50" y1="80" x2="105" y2="100" stroke-width="2.5" stroke="#FFFFFF" />
+      </g>
+
+      <!-- Nodes / Glowing Core Dots (Increasing Size and Intensity Left to Right) -->
+      <!-- Tier 1: Initial Moderate Core -->
+      <g transform="translate(-80, 0)">
+        <circle cx="0" cy="0" r="10" fill="#35D6FF" filter="url(#glow-cyan)" />
+        <circle cx="0" cy="0" r="4" fill="#FFFFFF" />
+      </g>
+
+      <!-- Tier 2: Secondary Split Cores (Brighter) -->
+      <g transform="translate(-20, -40)">
+        <circle cx="0" cy="0" r="14" fill="#FFB84D" filter="url(#glow-orange-intense)" />
+        <circle cx="0" cy="0" r="6" fill="#FFFFFF" />
+      </g>
+      <g transform="translate(-20, 40)">
+        <circle cx="0" cy="0" r="14" fill="#FFB84D" filter="url(#glow-orange-intense)" />
+        <circle cx="0" cy="0" r="6" fill="#FFFFFF" />
+      </g>
+
+      <!-- Tier 3: Escalated Explosive Cores (Max Glow & Size) -->
+      <g transform="translate(50, -80)">
+        <circle cx="0" cy="0" r="20" fill="#FFB84D" filter="url(#glow-orange-intense)" />
+        <circle cx="0" cy="0" r="11" fill="#FFFFFF" filter="url(#glow-orange-intense)" />
+      </g>
+      <g transform="translate(50, -20)">
+        <circle cx="0" cy="0" r="16" fill="#FFB84D" filter="url(#glow-orange-intense)" />
+        <circle cx="0" cy="0" r="8" fill="#FFFFFF" />
+      </g>
+      <g transform="translate(50, 20)">
+        <circle cx="0" cy="0" r="16" fill="#FFB84D" filter="url(#glow-orange-intense)" />
+        <circle cx="0" cy="0" r="8" fill="#FFFFFF" />
+      </g>
+      <g transform="translate(50, 80)">
+        <circle cx="0" cy="0" r="20" fill="#FFB84D" filter="url(#glow-orange-intense)" />
+        <circle cx="0" cy="0" r="11" fill="#FFFFFF" filter="url(#glow-orange-intense)" />
+      </g>
+
+      <!-- Escalation Energy Burst Rings -->
+      <circle cx="50" cy="-80" r="28" fill="none" stroke="#FFB84D" stroke-width="1.5" stroke-dasharray="2 4" opacity="0.8" />
+      <circle cx="50" cy="80" r="28" fill="none" stroke="#FFB84D" stroke-width="1.5" stroke-dasharray="2 4" opacity="0.8" />
+    </g>
+
+    <!-- ================================================================= -->
+    <!-- RIGHT SIDE: FUSION (FAIL-SAFE / SELF-TERMINATING DISRUPTION)      -->
+    <!-- ================================================================= -->
+    <g transform="translate(750, 300)">
+      <!-- Outer Geometric Guide Boundary -->
+      <circle cx="0" cy="0" r="140" fill="none" stroke="#9B7CFF" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="3 6" />
+
+      <!-- BROKEN / DISRUPTED MAGNETIC CONTAINMENT FIELD -->
+      <!-- Intact Left Semi-Arc -->
+      <path d="M 0 -95 A 95 95 0 0 0 -95 0 A 95 95 0 0 0 0 95" 
+            fill="none" stroke="#35D6FF" stroke-width="2.5" stroke-dasharray="6 4" opacity="0.7" filter="url(#glow-cyan)" />
+      
+      <!-- Disrupted Right Fractured Field Lines (Pulling Away/Breaking) -->
+      <path d="M 10 -93 C 35 -90, 70 -70, 85 -45" 
+            fill="none" stroke="#9B7CFF" stroke-width="2" stroke-dasharray="3 5" opacity="0.5" />
+      <path d="M 100 -20 C 85 0, 75 20, 95 50" 
+            fill="none" stroke="#9B7CFF" stroke-width="1.5" stroke-dasharray="2 4" opacity="0.3" />
+      <path d="M 10 93 C 40 90, 75 75, 85 55" 
+            fill="none" stroke="#9B7CFF" stroke-width="2" stroke-dasharray="3 5" opacity="0.5" />
+
+      <!-- Fracture Point Symbols / Expansion Gap -->
+      <g stroke="#35D6FF" stroke-width="2" opacity="0.6">
+        <line x1="2" y1="-102" x2="18" y2="-88" />
+        <line x1="2" y1="102" x2="18" y2="88" />
+      </g>
+
+      <!-- FADING / EXTINGUISHING PLASMA CORE -->
+      <!-- Outer Extinct Core Halo (Low opacity, non-glowing soft violet) -->
+      <circle cx="0" cy="0" r="55" fill="none" stroke="#9B7CFF" stroke-width="1.5" opacity="0.25" stroke-dasharray="2 4" />
+      
+      <!-- Dimmest Outer Residual Plasma Shell -->
+      <circle cx="0" cy="0" r="38" fill="#FFB84D" fill-opacity="0.05" stroke="#FFB84D" stroke-width="1.5" stroke-opacity="0.3" />
+      
+      <!-- Dimmed Core (No Glow Filter, Translucent Soft Cool Violet/Gold Tint) -->
+      <circle cx="0" cy="0" r="22" fill="#9B7CFF" fill-opacity="0.3" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.4" />
+      
+      <!-- Fading Weak Center Nucleus -->
+      <circle cx="0" cy="0" r="7" fill="#FFFFFF" opacity="0.3" />
+
+      <!-- Dissipating Energy Particles (Floating away & dying) -->
+      <g fill="#9B7CFF" opacity="0.4">
+        <circle cx="28" cy="-22" r="3" />
+        <circle cx="42" cy="-8" r="2" />
+        <circle cx="35" cy="18" r="2.5" />
+        <circle cx="20" cy="32" r="3" />
+        <circle cx="-30" cy="-35" r="2" opacity="0.2" />
+        <circle cx="-42" cy="12" r="1.5" opacity="0.2" />
+      </g>
+
+      <!-- Immediate Dissipation Vector Indicators (Cool Down / Fade Arrows) -->
+      <g stroke="#9B7CFF" stroke-width="1" opacity="0.3" stroke-linecap="round">
+        <line x1="22" y1="-18" x2="38" y2="-30" stroke-dasharray="2 2" />
+        <line x1="28" y1="0" x2="48" y2="0" stroke-dasharray="2 2" />
+        <line x1="22" y1="18" x2="38" y2="30" stroke-dasharray="2 2" />
+      </g>
+    </g>
+  </g>
+</svg>
