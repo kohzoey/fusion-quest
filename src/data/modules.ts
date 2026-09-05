@@ -30,7 +30,7 @@ export const module1: ModuleContent = {
       title: "Fusion vs. Fission",
       explanation:
         "Two important nuclear processes that can release energy are fusion and fission — and it's easy to mix them up, so it's worth getting this straight before anything else.\n\nFusion: light nuclei combine to form a heavier nucleus, releasing energy in the process. This is what powers the Sun and every other star.\n\nFission: a heavy nucleus splits apart into smaller pieces, also releasing energy. This is what powers conventional nuclear power plants today.\n\nThink of it as two opposite directions on the same idea: fusion pushes small nuclei together; fission breaks one large nucleus apart. Both release energy, but they rely on different physics, different fuels, and completely different technology.",
-   visual: {
+      visual: {
         kind: "diagram",
         ref: "/illustrations/m1-fusion-vs-fission.svg",
         alt: "Side-by-side diagram: on the left, two light nuclei merge into one heavier glowing nucleus (fusion); on the right, one heavy nucleus splits into two smaller nuclei (fission)",
@@ -48,14 +48,13 @@ export const module1: ModuleContent = {
         alt: "Abstract illustration of an astronomer silhouette observing a glowing star through a telescope, with faint question-mark shapes suggesting the mechanism was still unknown",
       },
     },
-    },
     {
       id: "bethe",
       title: "Bethe",
       explanation:
         "Nearly two decades later, in 1938–39, Hans Bethe explained the nuclear reactions responsible for energy generation in stars.\n\nAt a conceptual level: inside a star like our Sun, hydrogen nuclei (protons) fuse together in a multi-step sequence — the proton-proton chain — eventually producing helium and releasing energy at each step along the way. In hotter, more massive stars, a related sequence called the CNO cycle does the same basic job using carbon, nitrogen, and oxygen as helpers in the process.\n\nHis work provided the specific nuclear explanation for how stars generate their energy, and it was recognised with the 1967 Nobel Prize in Physics.",
       source: { label: "History-of-physics account of Bethe's 1938–39 work; 1967 Nobel Prize record", type: "independentlyReported" },
-          visual: {
+      visual: {
         kind: "diagram",
         ref: "/illustrations/m1-bethe.svg",
         alt: "Diagram of a multi-step reaction chain — a sequence of glowing nuclei connected by arrows, growing brighter at each step, ending in a large glowing core representing the proton-proton chain",
@@ -66,7 +65,7 @@ export const module1: ModuleContent = {
       title: "Stellar Nucleosynthesis",
       explanation:
         "One important distinction before moving on: explaining how stars generate energy is not the same question as explaining how stars build up all the chemical elements.\n\nBethe's work answered the first question — the specific reactions that power a star day to day. The second, bigger question — how stars, over their entire lifetimes, build up nearly every element on the periodic table — is called stellar nucleosynthesis, and it was worked out by many physicists over the decades that followed Bethe's own contribution. The two ideas are closely related, but they're not the same discovery, and it's not accurate to credit either one entirely to a single scientist.",
-         visual: {
+      visual: {
         kind: "diagram",
         ref: "/illustrations/m1-nucleosynthesis.svg",
         alt: "A glowing star at the centre with abstract geometric element symbols drifting outward at increasing distances, suggesting elements being formed and dispersed over a star's lifetime",
@@ -78,7 +77,7 @@ export const module1: ModuleContent = {
       explanation:
         "If fusion could release that much energy inside a star, could humans release it on Earth?\n\nThe answer came in 1952 — not as a source of power, but as a weapon. On 31 October 1952, the first thermonuclear device, code-named Mike, was tested at Enewetak Atoll. It demonstrated that the enormous energy released by a thermonuclear fusion process could be produced on Earth.\n\nThis is a critical distinction to hold onto for the rest of this app: the Mike test was uncontrolled fusion — an entire reaction released in a single, instantaneous, explosive burst, with no attempt to regulate or sustain it. A fusion power plant has a very different goal: a controlled, sustained reaction that releases energy steadily over time, in a way that can be safely managed. Proving fusion could release energy was one problem. Learning to control it was an entirely different, much harder one — and that's the problem the rest of fusion research has been tackling ever since.",
       source: { label: "Historical record of the 31 October 1952 Ivy Mike test, Enewetak Atoll", type: "independentlyReported" },
-         visual: {
+      visual: {
         kind: "diagram",
         ref: "/illustrations/m1-mike-test.svg",
         alt: "Side-by-side contrast: on the left, a sharp uncontrolled starburst shape representing a single explosive release; on the right, a smooth, steady glowing core held within concentric containing rings, representing a controlled, sustained reaction",
@@ -89,7 +88,7 @@ export const module1: ModuleContent = {
       title: "Early Controlled Fusion",
       explanation:
         "The search for controlled fusion began with a deceptively simple idea: Z-pinch.\n\nIf you run an electric current through a plasma, that current generates its own magnetic field — and that field squeezes, or \"pinches,\" the plasma inward, holding it away from any physical wall. A fusion-hot plasma would place extreme thermal loads on any material surface it touched, so researchers looked for ways to confine the plasma without letting it contact the walls.\n\nIn practice, Z-pinch plasmas turned out to be unstable — they tended to wobble, kink, and break apart before fusion conditions could be properly sustained. This instability became one of the defining challenges of early fusion research.\n\nAround the same time, in the mid-1950s, Soviet researchers began experimenting with a different shape: a toroidal (donut-shaped) magnetic confinement configuration. This approach led to the T-1 device, which began operating in 1958 and is generally considered the first tokamak. The tokamak approach offered a new way to improve plasma confinement and became an important direction in fusion research. Decades later, it remains the design basis for the world's largest fusion project, ITER, which Module 5 covers in detail.",
-         visual: {
+      visual: {
         kind: "diagram",
         ref: "/illustrations/m1-early-fusion.svg",
         alt: "Side-by-side comparison: on the left, a linear plasma column squeezed inward by curved magnetic field lines (Z-pinch); on the right, a donut-shaped toroidal tokamak with a glowing inner plasma ring",
@@ -100,18 +99,18 @@ export const module1: ModuleContent = {
       title: "The Decades-Long Quest",
       explanation:
         "By this point, scientists had learned a huge amount: what fusion actually needs to happen (extreme temperature to overcome the natural repulsion between nuclei), how much plasma needs to be present, and how long those conditions need to be sustained for a reaction to be worthwhile.\n\nKnowing what was needed turned out to be very different from being able to actually build it. Achieving and holding those exact conditions, reliably, safely, and for long enough — using real materials and real engineering — has remained one of the hardest sustained challenges in physics and engineering for more than 70 years.\n\nScientists had learned what fusion needed. The next challenge was learning how to create and control those conditions.",
-    },
-  ],
-  flagshipInteraction: { component: "Timeline", config: module1Timeline },
-  missionCheck: module1MissionCheck,
-  transitionToNext:
-    "Scientists had learned what fusion needed: extreme temperature, sufficient density, and confinement long enough to sustain the reaction. The next challenge was learning how to actually create and control those conditions here on Earth. That's exactly where Module 2: The Core Mechanics begins.",
       visual: {
         kind: "diagram",
         ref: "/illustrations/m1-decades-quest.svg",
         alt: "A long winding path across the image with glowing milestone nodes along it, growing brighter toward the end, suggesting gradual progress over a decades-long research journey",
       },
     },
+  ],
+  flagshipInteraction: { component: "Timeline", config: module1Timeline },
+  missionCheck: module1MissionCheck,
+  transitionToNext:
+    "Scientists had learned what fusion needed: extreme temperature, sufficient density, and confinement long enough to sustain the reaction. The next challenge was learning how to actually create and control those conditions here on Earth. That's exactly where Module 2: The Core Mechanics begins.",
+};
 
 /**
  * FINAL LOCKED CONTENT — transcribed verbatim from the Module 2
@@ -172,7 +171,7 @@ export const module2: ModuleContent = {
       explanation:
         "The Lawson criteria set the minimum plasma temperature and the minimum density × confinement time needed for useful fusion performance. The triple product is the single number scientists calculate from density, temperature, and confinement time to check how demanding those conditions are.\n\nTriple product tells us about plasma conditions. It is not the same as Q or electrical efficiency — those measure something different, which Module 5 explains when it covers real experiments like NIF.",
       misconception: "\"Triple product = Q\" — the triple product describes plasma conditions; Q is an energy ratio at a specified accounting boundary. They are not interchangeable.",
-            source: { label: "J.D. Lawson (1955); Wurzel & Hsu, Physics of Plasmas 29, 062103 (2022)", type: "primary" },
+      source: { label: "J.D. Lawson (1955); Wurzel & Hsu, Physics of Plasmas 29, 062103 (2022)", type: "primary" },
     },
     {
       id: "fusion-lab-intro",
