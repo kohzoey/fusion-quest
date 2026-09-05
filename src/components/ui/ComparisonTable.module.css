@@ -17,7 +17,7 @@
 .table {
   border-collapse: collapse;
   width: 100%;
-  min-width: 40rem;
+  min-width: 34rem;
   font-size: var(--font-size-small);
 }
 
@@ -38,6 +38,13 @@
 .table tbody th {
   font-weight: 600;
   white-space: nowrap;
+  /* Row labels stay pinned on the left while the data columns
+     scroll, so they're never cut off mid-word on narrower screens
+     the way a plain scrolling table would leave them. */
+  position: sticky;
+  left: 0;
+  background: var(--color-bg-panel);
+  z-index: 1;
 }
 
 .table tbody tr:last-child th,
