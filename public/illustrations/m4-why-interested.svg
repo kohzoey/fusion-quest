@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-orange" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g transform="translate(0, 0)">
+    <!-- ================= 1. TOP-LEFT: DENSE ENERGY-BURST SYMBOL ================= -->
+    <g transform="translate(250, 200)">
+      <!-- Outer Geometric Guide Circle -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#9B7CFF" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="3 6" />
+      
+      <!-- Outer Burst Rays -->
+      <g stroke="#35D6FF" stroke-width="2" stroke-linecap="round" opacity="0.8" filter="url(#glow-cyan)">
+        <line x1="0" y1="-55" x2="0" y2="-72" />
+        <line x1="0" y1="55" x2="0" y2="72" />
+        <line x1="-55" y1="0" x2="-72" y2="0" />
+        <line x1="55" y1="0" x2="72" y2="0" />
+        <line x1="-39" y1="-39" x2="-51" y2="-51" />
+        <line x1="39" y1="39" x2="51" y2="51" />
+        <line x1="39" y1="-39" x2="51" y2="-51" />
+        <line x1="-39" y1="39" x2="-51" y2="51" />
+      </g>
+
+      <!-- Concentric Energy Compression Rings -->
+      <polygon points="0,-42 10,-10 42,0 10,10 0,42 -10,10 -42,0 -10,-10" fill="none" stroke="#FFB84D" stroke-width="2" stroke-linejoin="round" filter="url(#glow-orange)" />
+      <polygon points="0,-28 7,-7 28,0 7,7 0,28 -7,7 -28,0 -7,-7" fill="#FFB84D" opacity="0.85" filter="url(#glow-orange)" />
+      
+      <!-- Dense Core Center -->
+      <circle cx="0" cy="0" r="10" fill="#FFFFFF" filter="url(#glow-cyan)" />
+    </g>
+
+    <!-- ================= 2. TOP-RIGHT: WATER-DROPLET SHAPE ================= -->
+    <g transform="translate(750, 200)">
+      <!-- Outer Geometric Guide Circle -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#9B7CFF" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="3 6" />
+      
+      <!-- Secondary Water Ripple Orbit Line -->
+      <ellipse cx="0" cy="25" rx="55" ry="16" fill="none" stroke="#9B7CFF" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5" />
+      <ellipse cx="0" cy="25" rx="35" ry="10" fill="none" stroke="#FFB84D" stroke-width="1.5" filter="url(#glow-orange)" opacity="0.8" />
+
+      <!-- Stylized Geometric Water Droplet -->
+      <path d="M 0 -58 
+               C 28 -15, 45 10, 45 26 
+               A 45 45 0 0 1 -45 26 
+               C -45 10, -28 -15, 0 -58 Z" 
+            fill="none" stroke="#35D6FF" stroke-width="3" stroke-linejoin="round" filter="url(#glow-cyan)" />
+            
+      <!-- Inner Glowing Core Accent Droplet -->
+      <path d="M 0 -32 
+               C 15 -5, 24 10, 24 20 
+               A 24 24 0 0 1 -24 20 
+               C -24 10, -15 -5, 0 -32 Z" 
+            fill="#35D6FF" opacity="0.4" filter="url(#glow-cyan)" />
+
+      <!-- Bright Highlight Arc -->
+      <path d="M -22 10 A 28 28 0 0 1 -10 -15" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+    </g>
+
+    <!-- ================= 3. BOTTOM-RIGHT: NO-SMOKE / NO-EMISSION SYMBOL ================= -->
+    <g transform="translate(750, 600)">
+      <!-- Outer Geometric Guide Circle -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#9B7CFF" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="3 6" />
+
+      <!-- Soft Rising Smoke / Emission Trails (Subdued Background) -->
+      <g stroke="#9B7CFF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4" stroke-dasharray="4 4">
+        <path d="M -20 30 C -30 10, -10 -10, -20 -30 C -25 -40, -15 -50, -20 -55" />
+        <path d="M 0 35 C -10 15, 10 -5, 0 -25 C -5 -35, 5 -45, 0 -58" />
+        <path d="M 20 30 C 10 10, 30 -10, 20 -30 C 15 -40, 25 -50, 20 -55" />
+      </g>
+
+      <!-- Prohibitory "No" Circle Ring -->
+      <circle cx="0" cy="0" r="50" fill="none" stroke="#FFB84D" stroke-width="3.5" filter="url(#glow-orange)" />
+      
+      <!-- Prohibitory Diagonal Slash -->
+      <line x1="-35" y1="-35" x2="35" y2="35" stroke="#FFB84D" stroke-width="3.5" stroke-linecap="round" filter="url(#glow-orange)" />
+
+      <!-- Central Clean Energy Spark (Foreground Overlay) -->
+      <circle cx="0" cy="0" r="8" fill="#FFFFFF" filter="url(#glow-cyan)" />
+      <path d="M 0 -18 L 0 18 M -18 0 L 18 0" stroke="#35D6FF" stroke-width="2" stroke-linecap="round" filter="url(#glow-cyan)" />
+    </g>
+
+    <!-- ================= 4. BOTTOM-LEFT: STEADY HORIZONTAL WAVE-LINE ================= -->
+    <g transform="translate(250, 600)">
+      <!-- Outer Geometric Guide Circle -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#9B7CFF" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="3 6" />
+      
+      <!-- Horizontal Reference Baseline -->
+      <line x1="-65" y1="0" x2="65" y2="0" stroke="#9B7CFF" stroke-width="1.5" opacity="0.3" stroke-dasharray="4 4" />
+
+      <!-- Upper & Lower Bound Envelope Lines -->
+      <line x1="-50" y1="-30" x2="50" y2="-30" stroke="#35D6FF" stroke-width="1" opacity="0.4" stroke-dasharray="2 4" />
+      <line x1="-50" y1="30" x2="50" y2="30" stroke="#35D6FF" stroke-width="1" opacity="0.4" stroke-dasharray="2 4" />
+
+      <!-- Continuous Smooth Steady Sine Wave Line -->
+      <path d="M -65 0 
+               C -48.75 -35, -32.5 -35, -16.25 0 
+               C 0 35, 16.25 35, 32.5 0 
+               C 48.75 -35, 65 -35, 81.25 0" 
+            fill="none" stroke="#35D6FF" stroke-width="3.5" stroke-linecap="round" filter="url(#glow-cyan)" />
+
+      <!-- Glowing Nodes along the Constant Wave -->
+      <circle cx="-40.6" cy="-24.7" r="4" fill="#FFB84D" filter="url(#glow-orange)" />
+      <circle cx="0" cy="0" r="5" fill="#FFFFFF" filter="url(#glow-cyan)" />
+      <circle cx="24.4" cy="24.7" r="4" fill="#FFB84D" filter="url(#glow-orange)" />
+      <circle cx="56.9" cy="-24.7" r="4" fill="#9B7CFF" filter="url(#glow-violet)" />
+    </g>
+  </g>
+</svg>
