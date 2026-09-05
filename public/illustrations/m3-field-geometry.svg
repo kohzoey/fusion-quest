@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <filter id="fg-glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="fg-glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="fg-glow-violet" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <ellipse cx="600" cy="337.5" rx="330" ry="180" fill="none" stroke="#9B7CFF" stroke-width="2" opacity="0.35" />
+  <ellipse cx="600" cy="337.5" rx="150" ry="80" fill="none" stroke="#9B7CFF" stroke-width="2" opacity="0.35" />
+
+  <g fill="none" stroke="#FFB84D" stroke-width="3" filter="url(#fg-glow-gold)">
+    <ellipse cx="600" cy="337.5" rx="330" ry="180" opacity="0.9" />
+    <ellipse cx="600" cy="337.5" rx="240" ry="130" opacity="0.7" />
+    <ellipse cx="600" cy="337.5" rx="150" ry="80" opacity="0.9" />
+  </g>
+
+  <g fill="#FFB84D" filter="url(#fg-glow-gold)">
+    <path d="M 600 157.5 L 588 172 L 612 172 Z" />
+    <path d="M 600 517.5 L 588 503 L 612 503 Z" />
+  </g>
+
+  <g fill="none" stroke="#35D6FF" stroke-width="2.5" filter="url(#fg-glow-cyan)" opacity="0.85">
+    <ellipse cx="270" cy="337.5" rx="42" ry="150" />
+    <ellipse cx="405" cy="240" rx="42" ry="150" transform="rotate(-18 405 240)" />
+    <ellipse cx="600" cy="200" rx="42" ry="150" transform="rotate(0 600 200)" />
+    <ellipse cx="795" cy="240" rx="42" ry="150" transform="rotate(18 795 240)" />
+    <ellipse cx="930" cy="337.5" rx="42" ry="150" />
+    <ellipse cx="795" cy="435" rx="42" ry="150" transform="rotate(-18 795 435)" />
+    <ellipse cx="600" cy="475" rx="42" ry="150" />
+    <ellipse cx="405" cy="435" rx="42" ry="150" transform="rotate(18 405 435)" />
+  </g>
+
+  <g fill="#35D6FF" filter="url(#fg-glow-cyan)">
+    <path d="M 270 187.5 L 258 202 L 282 202 Z" />
+    <path d="M 930 487.5 L 918 473 L 942 473 Z" />
+  </g>
+
+  <path d="M 330 260 C 420 200, 520 200, 600 260 C 680 320, 780 320, 870 260"
+        fill="none" stroke="#9B7CFF" stroke-width="3.5" stroke-linecap="round"
+        filter="url(#fg-glow-violet)" opacity="0.9" />
+  <path d="M 330 415 C 420 475, 520 475, 600 415 C 680 355, 780 355, 870 415"
+        fill="none" stroke="#9B7CFF" stroke-width="3.5" stroke-linecap="round"
+        filter="url(#fg-glow-violet)" opacity="0.9" />
+</svg>
