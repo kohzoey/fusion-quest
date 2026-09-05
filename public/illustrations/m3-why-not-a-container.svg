@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Soft Glow Filters -->
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" opacity="0.85" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- NOTE: TRANSPARENT BACKGROUND (No background rect or fill) -->
+
+  <!-- Abstract Cosmic Grid & Alignment Guides (Educational Aesthetic) -->
+  <g stroke="#35D6FF" stroke-width="1" opacity="0.1" fill="none">
+    <circle cx="600" cy="337.5" r="300" stroke-dasharray="4 8" />
+    <line x1="200" y1="337.5" x2="1000" y2="337.5" stroke-dasharray="4 4" />
+    <line x1="600" y1="50" x2="600" y2="625" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- ==================== CONTAINER STRUCTURE (SIMPLE OUTLINE) ==================== -->
+  <g id="magnetic-container-outline">
+    <!-- Main D-Shaped Tokamak Shell (Minimal Cross-Section) -->
+    <path d="M 600 80 
+             C 800 80, 960 180, 960 337.5 
+             C 960 495, 800 595, 600 595 
+             C 400 595, 240 495, 240 337.5 
+             C 240 180, 400 80, 600 80 Z 
+             M 600 180 
+             C 500 180, 400 230, 400 337.5 
+             C 400 445, 500 495, 600 495 
+             C 700 495, 800 445, 800 337.5 
+             C 800 230, 700 180, 600 180 Z" 
+          fill="none" stroke="#9B7CFF" stroke-width="3" filter="url(#glow-violet)" />
+
+    <!-- Simplified Poloidal Coils / Structural Ribs (Cyan Accents) -->
+    <ellipse cx="600" cy="180" rx="200" ry="25" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+    <ellipse cx="600" cy="495" rx="200" ry="25" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+    <ellipse cx="400" cy="337.5" rx="30" ry="157.5" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+    <ellipse cx="800" cy="337.5" rx="30" ry="157.5" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+  </g>
+
+  <!-- ==================== SUSPENDED PLASMA CORE (GLOWING GOLD) ==================== -->
+  <g id="suspended-plasma-core">
+    <!-- Outer Radiant Energy Aura -->
+    <path d="M 600 210 
+             C 670 210, 730 260, 730 337.5 
+             C 730 415, 670 465, 600 465 
+             C 530 465, 470 415, 470 337.5 
+             C 470 260, 530 210, 600 210 Z" 
+          fill="#FFB84D" fill-opacity="0.08" filter="url(#glow-gold)" />
+
+    <!-- Secondary Equilibrium Boundary Ring (Cyan Dashed) -->
+    <path d="M 600 230 
+             C 650 230, 700 270, 700 337.5 
+             C 700 405, 650 445, 600 445 
+             C 550 445, 500 405, 500 337.5 
+             C 500 270, 550 230, 600 230 Z" 
+          fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.75" />
+
+    <!-- Constant equilibrium inner boundary -->
+    <path d="M 600 250 
+             C 630 250, 670 280, 670 337.5 
+             C 670 395, 630 425, 600 425 
+             C 570 425, 530 395, 530 337.5 
+             C 530 280, 570 250, 600 250 Z" 
+          fill="none" stroke="#FFB84D" stroke-width="2.5" filter="url(#glow-gold)" />
+
+    <!-- Intense Ignition Core -->
+    <path d="M 600 275 
+             C 615 275, 630 295, 630 337.5 
+             C 630 380, 615 400, 600 400 
+             C 585 400, 570 380, 570 337.5 
+             C 570 295, 585 275, 600 275 Z" 
+          fill="#FFB84D" fill-opacity="0.85" filter="url(#glow-gold)" />
+  </g>
+
+  <!-- ==================== SEPARATION GAP ACCENTS ==================== -->
+  <g id="magnetic-field-separation">
+    <!-- Top Magnetic Squeezing Line (Cyan Field) -->
+    <path d="M 500 190 Q 600 200 700 190" fill="none" stroke="#35D6FF" stroke-width="2" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)" />
+    <!-- Bottom Magnetic Squeezing Line -->
+    <path d="M 500 485 Q 600 475 700 485" fill="none" stroke="#35D6FF" stroke-width="2" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)" />
+
+    <!-- Faint Heat Distortion Lines (Violet Waves near inner wall) -->
+    <path d="M 370 260 Q 380 337.5 370 415" fill="none" stroke="#9B7CFF" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.3" filter="url(#glow-violet)" />
+    <path d="M 830 260 Q 820 337.5 830 415" fill="none" stroke="#9B7CFF" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.3" filter="url(#glow-violet)" />
+
+    <!-- Repulsion Vectors (Indicating Outward Magnetic Pressure) -->
+    <line x1="600" y1="180" x2="600" y2="230" stroke="#9B7CFF" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6" filter="url(#glow-violet)" />
+    <line x1="600" y1="495" x2="600" y2="445" stroke="#9B7CFF" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6" filter="url(#glow-violet)" />
+  </g>
+
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#35D6FF" />
+    </marker>
+  </defs>
+</svg>
