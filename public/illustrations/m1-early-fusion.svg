@@ -1,98 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmZGUxM2NhNC04YWQyLTQwN2MtYjQ1OC0wMDM3MTc3M2EwZWIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaCcnkCZmcsrukZB6zQ+Ru1sAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo1NzI5M2UyZS0yMTM5LTRiMTItYTJjYy0xOWQ2YWQyYjYzOTRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoml4Ch5S9GqU4Oab52rdflQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgggbhNrHbruTBIMui+x0s7hCI6oSRhnyidIw6zC8LDV+ukZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaBHG8SraOFu6fVB7lM3BXuoAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCDqQDMYS0MYZ2McApiczTNp8h3SnAZYTN1UzfEdB6pZtmRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiZZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmZkZTEzY2E0LThhZDItNDA3Yy1iNDU4LTAwMzcxNzczYTBlYi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjAxY2NjMjg0LTA0ZmMtNGNkNy05NGU3LTllODY0Y2FkMTQ0MHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCBuE2sduu5MEgy6L7HSzuEIjqhJGGfKJ0jDrMLwsNX66JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggjvhV4IlnGW+rlDEFk98gmm0Oo1J6vZS8ZJJ+5kTMKp2iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgghcDyqXc7NGuEdwe9BTLuUD9fGmaFnwSs8YeHlvWu+RZ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQMaIY7NkJfR8Hw/E+U7uGc/LyySnjQq0QJtV6oMYrdUPBzZJBm4HfR43CQr47YObXxfCO0BeklF7sLuANcHAKSM=</c2pa:manifest></metadata>
   <defs>
-    <!-- Soft Radial Glow Filters -->
     <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="10" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" opacity="0.8" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge><feMergeNode in="blur" opacity="0.8" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
-
     <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="6" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
-
     <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="7" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#35D6FF" />
+    </marker>
   </defs>
-
-  <!-- Background -->
-  <rect width="1200" height="675" fill="#07111F" />
-
-  <!-- Center Split Line (Museum Poster Layout Divider) -->
-  <line x1="600" y1="100" x2="600" y2="575" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.2" stroke-dasharray="6 6" />
-
-  <!-- ==================== LEFT SIDE: UNCONTROLLED BURST ==================== -->
-  <g id="uncontrolled-burst">
-    <!-- Abstract Cosmic Grid Background Accent -->
-    <circle cx="330" cy="337.5" r="220" fill="none" stroke="#9B7CFF" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="4 8" />
-
-    <!-- Outer Dispersed Burst Aura -->
-    <circle cx="330" cy="337.5" r="130" fill="#FFB84D" fill-opacity="0.06" filter="url(#glow-gold)" />
-
-    <!-- Sharp Radiating Energy Spikes (Uncontrolled Starburst) -->
-    <path d="M 330 117.5 
-             L 348 277.5 L 500 187.5 L 388 307.5 L 550 337.5 L 388 367.5 L 500 487.5 L 348 397.5 
-             L 330 557.5 
-             L 312 397.5 L 160 487.5 L 272 367.5 L 110 337.5 L 272 307.5 L 160 187.5 L 312 277.5 Z" 
-          fill="#FFB84D" fill-opacity="0.25" stroke="#FFB84D" stroke-width="2" filter="url(#glow-gold)" />
-
-    <!-- Secondary Asymmetric Sharp Rays (Violet & Cyan Accents) -->
-    <path d="M 330 167.5 L 340 307.5 L 470 237.5 L 360 327.5 L 500 337.5 L 360 347.5 L 470 437.5 L 340 367.5 L 330 507.5 L 320 367.5 L 190 437.5 L 300 347.5 L 160 337.5 L 300 327.5 L 190 237.5 L 320 307.5 Z" 
-          fill="none" stroke="#9B7CFF" stroke-width="1.5" filter="url(#glow-violet)" opacity="0.8" />
-
-    <!-- Intense Central Sharp Core -->
-    <polygon points="330,237.5 352,315.5 430,337.5 352,359.5 330,437.5 308,359.5 230,337.5 308,315.5" 
-             fill="#FFB84D" filter="url(#glow-gold)" />
-
-    <!-- Outward Dissipating Particle Vector Sparks -->
-    <circle cx="520" cy="140" r="3" fill="#FFB84D" filter="url(#glow-gold)" />
-    <circle cx="130" cy="190" r="4" fill="#9B7CFF" filter="url(#glow-violet)" />
-    <circle cx="540" cy="480" r="3.5" fill="#35D6FF" filter="url(#glow-cyan)" />
-    <circle cx="150" cy="500" r="3" fill="#FFB84D" filter="url(#glow-gold)" />
+  <line x1="600" y1="90" x2="600" y2="585" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.2" stroke-dasharray="6 6" />
+  <g id="linear-pinch">
+    <circle cx="300" cy="337.5" r="220" fill="none" stroke="#9B7CFF" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="4 8" />
+    <rect x="270" y="137.5" width="60" height="400" rx="30" fill="#FFB84D" fill-opacity="0.15" filter="url(#glow-gold)" />
+    <rect x="282" y="137.5" width="36" height="400" rx="18" fill="none" stroke="#FFB84D" stroke-width="2.5" filter="url(#glow-gold)" />
+    <rect x="288" y="137.5" width="24" height="400" rx="12" fill="#FFB84D" fill-opacity="0.8" filter="url(#glow-gold)" />
+    <path d="M 220 167.5 Q 260 337.5 220 507.5" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+    <path d="M 245 147.5 Q 275 337.5 245 527.5" fill="none" stroke="#35D6FF" stroke-width="2.5" filter="url(#glow-cyan)" />
+    <path d="M 355 147.5 Q 325 337.5 355 527.5" fill="none" stroke="#35D6FF" stroke-width="2.5" filter="url(#glow-cyan)" />
+    <path d="M 380 167.5 Q 340 337.5 380 507.5" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+    <path d="M 200 337.5 L 260 337.5" fill="none" stroke="#35D6FF" stroke-width="2" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)" />
+    <path d="M 400 337.5 L 340 337.5" fill="none" stroke="#35D6FF" stroke-width="2" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)" />
+    <path d="M 215 237.5 L 265 247.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
+    <path d="M 385 237.5 L 335 247.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
+    <path d="M 215 437.5 L 265 427.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
+    <path d="M 385 437.5 L 335 427.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
   </g>
-
-  <!-- ==================== RIGHT SIDE: CONTROLLED SUSTAINED CORE ==================== -->
-  <g id="controlled-sustained">
-    <!-- Concentric Outer Magnetic Geometry -->
-    <circle cx="870" cy="337.5" r="220" fill="none" stroke="#35D6FF" stroke-width="1" stroke-opacity="0.12" stroke-dasharray="6 6" />
-    <circle cx="870" cy="337.5" r="170" fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.25" />
-
-    <!-- Primary Containing Ring (Violet Magnetic Boundary) -->
-    <circle cx="870" cy="337.5" r="125" fill="none" stroke="#9B7CFF" stroke-width="3" filter="url(#glow-violet)" />
-    
-    <!-- Secondary Precision Shield Ring (Cyan Dashed Outer Wall) -->
-    <circle cx="870" cy="337.5" r="105" fill="none" stroke="#35D6FF" stroke-width="2" stroke-dasharray="8 6" filter="url(#glow-cyan)" />
-
-    <!-- Stable Vacuum Field Gap -->
-    <circle cx="870" cy="337.5" r="85" fill="none" stroke="#35D6FF" stroke-width="1" stroke-opacity="0.4" />
-
-    <!-- Inner Smooth Sustained Glowing Core -->
-    <!-- Soft Heat Aura -->
-    <circle cx="870" cy="337.5" r="70" fill="#FFB84D" fill-opacity="0.15" filter="url(#glow-gold)" />
-    
-    <!-- Smooth Plasma Outer Boundary -->
-    <circle cx="870" cy="337.5" r="50" fill="none" stroke="#FFB84D" stroke-width="3" filter="url(#glow-gold)" />
-    
-    <!-- Constant Equilibrium Center -->
-    <circle cx="870" cy="337.5" r="36" fill="#FFB84D" fill-opacity="0.85" filter="url(#glow-gold)" />
-
-    <!-- Minimal Radial Equilibrium Guides (Museum Poster Precision Vectors) -->
-    <g stroke="#35D6FF" stroke-width="1.5" opacity="0.6" stroke-linecap="round">
-      <line x1="870" y1="202.5" x2="870" y2="222.5" />
-      <line x1="870" y1="452.5" x2="870" y2="472.5" />
-      <line x1="735" y1="337.5" x2="755" y2="337.5" />
-      <line x1="985" y1="337.5" x2="1005" y2="337.5" />
-    </g>
+  <g id="toroidal-tokamak">
+    <circle cx="900" cy="337.5" r="220" fill="none" stroke="#35D6FF" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="4 8" />
+    <path d="M 900 137.5 C 1030 137.5, 1110 217.5, 1110 337.5 C 1110 457.5, 1030 537.5, 900 537.5 C 770 537.5, 690 457.5, 690 337.5 C 690 217.5, 770 137.5, 900 137.5 Z M 900 237.5 C 840 237.5, 790 277.5, 790 337.5 C 790 397.5, 840 437.5, 900 437.5 C 960 437.5, 1010 397.5, 1010 337.5 C 1010 277.5, 960 237.5, 900 237.5 Z"
+          fill="none" stroke="#9B7CFF" stroke-width="3" filter="url(#glow-violet)" />
+    <ellipse cx="740" cy="337.5" rx="20" ry="100" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+    <ellipse cx="1060" cy="337.5" rx="20" ry="100" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+    <ellipse cx="900" cy="187.5" rx="100" ry="20" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+    <ellipse cx="900" cy="487.5" rx="100" ry="20" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
+    <path d="M 900 187.5 C 990 187.5, 1050 247.5, 1050 337.5 C 1050 427.5, 990 487.5, 900 487.5 C 810 487.5, 750 427.5, 750 337.5 C 750 247.5, 810 187.5, 900 187.5 Z"
+          fill="none" stroke="#FFB84D" stroke-width="12" fill-opacity="0.1" filter="url(#glow-gold)" opacity="0.3" />
+    <path d="M 900 187.5 C 990 187.5, 1050 247.5, 1050 337.5 C 1050 427.5, 990 487.5, 900 487.5 C 810 487.5, 750 427.5, 750 337.5 C 750 247.5, 810 187.5, 900 187.5 Z"
+          fill="none" stroke="#FFB84D" stroke-width="4" filter="url(#glow-gold)" />
+    <path d="M 900 212.5 C 970 212.5, 1025 262.5, 1025 337.5 C 1025 412.5, 970 462.5, 900 462.5 C 830 462.5, 775 412.5, 775 337.5 C 775 262.5, 830 212.5, 900 212.5 Z"
+          fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.8" />
   </g>
 </svg>
