@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-orange" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Marker for Connecting Arrows -->
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#9B7CFF" />
+    </marker>
+  </defs>
+
+  <g transform="translate(0, 0)">
+    <!-- ================= CONNECTING FLOW LINES & ARROWS (Z-Loop / Clockwise 4-Corner Path) ================= -->
+    <g stroke="#9B7CFF" stroke-width="2.5" opacity="0.8">
+      <!-- Arrow 1: Top-Left (Fusion Core) -> Top-Right (Coolant) -->
+      <line x1="390" y1="200" x2="610" y2="200" marker-end="url(#arrowhead)" stroke-dasharray="6 4" />
+      
+      <!-- Arrow 2: Top-Right (Coolant) -> Bottom-Right (Turbine) -->
+      <line x1="750" y1="310" x2="750" y2="490" marker-end="url(#arrowhead)" stroke-dasharray="6 4" />
+      
+      <!-- Arrow 3: Bottom-Right (Turbine) -> Bottom-Left (Electricity) -->
+      <line x1="610" y1="600" x2="390" y2="600" marker-end="url(#arrowhead)" stroke-dasharray="6 4" />
+    </g>
+
+    <!-- ================= NODE 1: TOP-LEFT — GLOWING FUSION CORE ================= -->
+    <g transform="translate(250, 200)">
+      <!-- Outer Magnetic Rings -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#9B7CFF" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="3 6" />
+      <ellipse cx="0" cy="0" rx="80" ry="28" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" opacity="0.8" transform="rotate(-15)" />
+      <ellipse cx="0" cy="0" rx="80" ry="28" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" opacity="0.8" transform="rotate(45)" />
+      
+      <!-- Inner Glowing Plasma Core -->
+      <circle cx="0" cy="0" r="45" fill="none" stroke="#FFB84D" stroke-width="2.5" filter="url(#glow-orange)" />
+      <circle cx="0" cy="0" r="25" fill="#FFB84D" filter="url(#glow-orange)" opacity="0.85" />
+      <circle cx="0" cy="0" r="9" fill="#FFFFFF" filter="url(#glow-cyan)" />
+    </g>
+
+    <!-- ================= NODE 2: TOP-RIGHT — COOLANT / HEAT EXCHANGER LOOP ================= -->
+    <g transform="translate(750, 200)">
+      <!-- Outer Guide Circle -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#9B7CFF" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="2 4" />
+      
+      <!-- Chamber Frame -->
+      <rect x="-50" y="-60" width="100" height="120" rx="14" fill="none" stroke="#9B7CFF" stroke-width="1.8" stroke-opacity="0.5" />
+      
+      <!-- Glowing Heat Exchanger Coil Pipe -->
+      <path d="M -32 -42 C -10 -42, -10 -20, -32 -20 
+               C 10 -20, 10 2, -32 2 
+               C 10 2, 10 24, -32 24 
+               C 10 24, 10 46, 32 46" 
+            fill="none" stroke="#FFB84D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow-orange)" />
+      
+      <!-- Coolant Circulation Flow Rings -->
+      <path d="M -32 -42 L 32 -42 C 48 -42, 48 46, 32 46" fill="none" stroke="#35D6FF" stroke-width="2" stroke-dasharray="4 3" filter="url(#glow-cyan)" opacity="0.8" />
+    </g>
+
+    <!-- ================= NODE 3: BOTTOM-RIGHT — TURBINE BLADES ================= -->
+    <g transform="translate(750, 600)">
+      <!-- Outer Enclosure Guide -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#9B7CFF" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="2 4" />
+      <circle cx="0" cy="0" r="70" fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.4" />
+      
+      <!-- Central Axle/Hub -->
+      <circle cx="0" cy="0" r="16" fill="none" stroke="#9B7CFF" stroke-width="2" filter="url(#glow-violet)" />
+      <circle cx="0" cy="0" r="7" fill="#35D6FF" filter="url(#glow-cyan)" />
+
+      <!-- Symmetric Geometric Turbine Blades -->
+      <g stroke="#35D6FF" stroke-width="2.2" fill="none" filter="url(#glow-cyan)">
+        <!-- Blade 1 -->
+        <path d="M 0 -16 C -9 -34, -6 -56, 0 -65 C 9 -56, 17 -34, 0 -16 Z" />
+        <!-- Blade 2 -->
+        <path d="M 14 8 C 32 2, 54 15, 56 25 C 44 29, 20 27, 14 8 Z" />
+        <!-- Blade 3 -->
+        <path d="M -14 8 C -20 27, -44 29, -56 25 C -54 15, -32 2, -14 8 Z" />
+      </g>
+
+      <!-- Rotation Dynamics Accents -->
+      <path d="M -48 -34 C -28 -54, 12 -58, 40 -42" fill="none" stroke="#FFB84D" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 5" filter="url(#glow-orange)" opacity="0.85" />
+      <path d="M 48 22 C 40 45, 6 58, -28 50" fill="none" stroke="#FFB84D" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 5" filter="url(#glow-orange)" opacity="0.85" />
+    </g>
+
+    <!-- ================= NODE 4: BOTTOM-LEFT — LIGHTNING / ELECTRICITY ================= -->
+    <g transform="translate(250, 600)">
+      <!-- Outer Energy Field Circle -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#9B7CFF" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="3 6" />
+      <circle cx="0" cy="0" r="58" fill="none" stroke="#FFB84D" stroke-opacity="0.25" stroke-width="1" />
+
+      <!-- Radial Energy Emission Lines -->
+      <g stroke="#35D6FF" stroke-width="1.5" opacity="0.6">
+        <line x1="0" y1="-62" x2="0" y2="-74" />
+        <line x1="0" y1="62" x2="0" y2="74" />
+        <line x1="-62" y1="0" x2="-74" y2="0" />
+        <line x1="62" y1="0" x2="74" y2="0" />
+        <line x1="-44" y1="-44" x2="-52" y2="-52" />
+        <line x1="44" y1="44" x2="52" y2="52" />
+        <line x1="44" y1="-44" x2="52" y2="-52" />
+        <line x1="-44" y1="44" x2="-52" y2="52" />
+      </g>
+
+      <!-- Stylized Central Lightning Bolt Icon -->
+      <polygon points="9,-58 -25,0 2,0 -9,58 25,0 -2,0" fill="#FFB84D" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" filter="url(#glow-orange)" />
+      
+      <!-- Inner Core Glow Bolt Accent -->
+      <polygon points="6,-50 -19,-2 -2,-2 -8,50 17,-2 0,-2" fill="#FFFFFF" filter="url(#glow-cyan)" opacity="0.9" />
+    </g>
+  </g>
+</svg>
