@@ -1,119 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo1Mzk2N2E5Ny0wNDg5LTQxNWUtYTQ5NC0zODBlYmM1NzA1NmMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaB2OnDBCGAJo9YtVfXFsMr4AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo1MjIxMThiNi04NjFiLTQ5ZDQtOTkwNi04YzkxNjcwYWU2OTBscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNowaWl5jlfst2HQHNl+ii40wAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggi6hcSW/yrCmlgrzj9ON2YhqdE//9oAYM2CalQCFmKgGkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaADrNn1okLQrLh3eyxSnM+MAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCCb4Jzm1zGYym+dtcmFbO2zaErTfPKW4qv6/dRO3N0lj2RuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiZZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjUzOTY3YTk3LTA0ODktNDE1ZS1hNDk0LTM4MGViYzU3MDU2Yy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmIzOGM5NmQxLTJmNjgtNGNhZi05ZTNlLTc5MDM5ODVhZDlhMHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCLqFxJb/KsKaWCvOP043ZiGp0T//2gBgzYJqVAIWYqAaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggZ9KCJRwD0Ove70GEtSU6/4ILjoP1TBiKgAIzTDc0hNaiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggWRJRTrL9+SATLSX6oBZ0l0eG5yE6kPjlNHPQU7IHoS10Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQHXkLdi0KchwSBemkYqZWkurdMfIpOdZ+o2/Jzz4hRvF1svPabIZsu+juRLnYVJK4pfHDbwo8gyG3Sz634H1aPo=</c2pa:manifest></metadata>
   <defs>
-    <!-- Soft Glow Filters -->
-    <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" opacity="0.8" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
     <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
-
     <filter id="glow-violet" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
-
-    <!-- Vector Arrowhead Markers -->
-    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#35D6FF" />
-    </marker>
+    <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge><feMergeNode in="blur" opacity="0.85" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <linearGradient id="path-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#35D6FF" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#9B7CFF" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#FFB84D" stop-opacity="0.9" />
+    </linearGradient>
   </defs>
-
-  <!-- Dark Navy Background -->
-  <rect width="1200" height="675" fill="#07111F" />
-
-  <!-- Center Split Line (Museum Poster Layout Divider) -->
-  <line x1="600" y1="90" x2="600" y2="585" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.2" stroke-dasharray="6 6" />
-
-  <!-- ==================== LEFT SIDE: LINEAR PLASMA COLUMN (PINCH) ==================== -->
-  <g id="linear-pinch">
-    <!-- Orbital/Grid Background Accent -->
-    <circle cx="300" cy="337.5" r="220" fill="none" stroke="#9B7CFF" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="4 8" />
-
-    <!-- Linear Vertical Plasma Column Core -->
-    <!-- Outer Plasma Aura -->
-    <rect x="270" y="137.5" width="60" height="400" rx="30" fill="#FFB84D" fill-opacity="0.15" filter="url(#glow-gold)" />
-    <!-- Inner Squeezed Plasma Core -->
-    <rect x="282" y="137.5" width="36" height="400" rx="18" fill="none" stroke="#FFB84D" stroke-width="2.5" filter="url(#glow-gold)" />
-    <rect x="288" y="137.5" width="24" height="400" rx="12" fill="#FFB84D" fill-opacity="0.8" filter="url(#glow-gold)" />
-
-    <!-- Surrounding Curved Magnetic Squeezing Field Lines (Cyan Vectors) -->
-    <!-- Magnetic Line Left Outer -->
-    <path d="M 220 167.5 Q 260 337.5 220 507.5" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
-    <!-- Magnetic Line Left Inner (Squeezing) -->
-    <path d="M 245 147.5 Q 275 337.5 245 527.5" fill="none" stroke="#35D6FF" stroke-width="2.5" filter="url(#glow-cyan)" />
-    
-    <!-- Magnetic Line Right Inner (Squeezing) -->
-    <path d="M 355 147.5 Q 325 337.5 355 527.5" fill="none" stroke="#35D6FF" stroke-width="2.5" filter="url(#glow-cyan)" />
-    <!-- Magnetic Line Right Outer -->
-    <path d="M 380 167.5 Q 340 337.5 380 507.5" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
-
-    <!-- Inward Pinch Force Vector Arrows -->
-    <path d="M 200 337.5 L 260 337.5" fill="none" stroke="#35D6FF" stroke-width="2" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)" />
-    <path d="M 400 337.5 L 340 337.5" fill="none" stroke="#35D6FF" stroke-width="2" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)" />
-    <path d="M 215 237.5 L 265 247.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
-    <path d="M 385 237.5 L 335 247.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
-    <path d="M 215 437.5 L 265 427.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
-    <path d="M 385 437.5 L 335 427.5" fill="none" stroke="#35D6FF" stroke-width="1.5" marker-end="url(#arrow-cyan)" />
+  <g stroke="#35D6FF" stroke-width="1" opacity="0.1" fill="none">
+    <line x1="100" y1="135" x2="1100" y2="135" stroke-dasharray="4 8" />
+    <line x1="100" y1="270" x2="1100" y2="270" stroke-dasharray="4 8" />
+    <line x1="100" y1="405" x2="1100" y2="405" stroke-dasharray="4 8" />
+    <line x1="100" y1="540" x2="1100" y2="540" stroke-dasharray="4 8" />
+    <circle cx="1020" cy="220" r="180" stroke-dasharray="6 6" />
   </g>
-
-  <!-- ==================== RIGHT SIDE: TOROIDAL TOKAMAK SHAPE ==================== -->
-  <g id="toroidal-tokamak">
-    <!-- Grid/Axis Alignments -->
-    <circle cx="900" cy="337.5" r="220" fill="none" stroke="#35D6FF" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="4 8" />
-
-    <!-- Tokamak Outer Shield Shell (Soft Violet) -->
-    <path d="M 900 137.5 
-             C 1030 137.5, 1110 217.5, 1110 337.5 
-             C 1110 457.5, 1030 537.5, 900 537.5 
-             C 770 537.5, 690 457.5, 690 337.5 
-             C 690 217.5, 770 137.5, 900 137.5 Z 
-             M 900 237.5 
-             C 840 237.5, 790 277.5, 790 337.5 
-             C 790 397.5, 840 437.5, 900 437.5 
-             C 960 437.5, 1010 397.5, 1010 337.5 
-             C 1010 277.5, 960 237.5, 900 237.5 Z" 
-          fill="none" stroke="#9B7CFF" stroke-width="3" filter="url(#glow-violet)" />
-
-    <!-- Tokamak Toroidal Coils / Structural Ribs -->
-    <ellipse cx="740" cy="337.5" rx="20" ry="100" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
-    <ellipse cx="1060" cy="337.5" rx="20" ry="100" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
-    <ellipse cx="900" cy="187.5" rx="100" ry="20" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
-    <ellipse cx="900" cy="487.5" rx="100" ry="20" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.6" />
-
-    <!-- Inner Toroidal Plasma Ring (Glowing Gold Closed Loop) -->
-    <path d="M 900 187.5 
-             C 990 187.5, 1050 247.5, 1050 337.5 
-             C 1050 427.5, 990 487.5, 900 487.5 
-             C 810 487.5, 750 427.5, 750 337.5 
-             C 750 247.5, 810 187.5, 900 187.5 Z" 
-          fill="none" stroke="#FFB84D" stroke-width="12" fill-opacity="0.1" filter="url(#glow-gold)" opacity="0.3" />
-
-    <path d="M 900 187.5 
-             C 990 187.5, 1050 247.5, 1050 337.5 
-             C 1050 427.5, 990 487.5, 900 487.5 
-             C 810 487.5, 750 427.5, 750 337.5 
-             C 750 247.5, 810 187.5, 900 187.5 Z" 
-          fill="none" stroke="#FFB84D" stroke-width="4" filter="url(#glow-gold)" />
-
-    <!-- Magnetic Field Helical Axis Line (Cyan Dashed Torus Core) -->
-    <path d="M 900 212.5 
-             C 970 212.5, 1025 262.5, 1025 337.5 
-             C 1025 412.5, 970 462.5, 900 462.5 
-             C 830 462.5, 775 412.5, 775 337.5 
-             C 775 262.5, 830 212.5, 900 212.5 Z" 
-          fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.8" />
+  <path d="M 80 480 C 220 540, 260 380, 380 340 C 500 300, 520 480, 660 450 C 800 420, 780 200, 920 220 C 980 230, 1010 220, 1020 220"
+        fill="none" stroke="url(#path-gradient)" stroke-width="6" opacity="0.4" filter="url(#glow-gold)" />
+  <path d="M 80 480 C 220 540, 260 380, 380 340 C 500 300, 520 480, 660 450 C 800 420, 780 200, 920 220 C 980 230, 1010 220, 1020 220"
+        fill="none" stroke="url(#path-gradient)" stroke-width="2.5" />
+  <path d="M 80 495 C 220 555, 260 395, 380 355 C 500 315, 520 495, 660 465 C 800 435, 780 215, 920 235 C 980 245, 1010 235, 1020 235"
+        fill="none" stroke="#35D6FF" stroke-width="1" stroke-dasharray="4 6" opacity="0.25" />
+  <g id="node-1">
+    <circle cx="80" cy="480" r="14" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.5" />
+    <circle cx="80" cy="480" r="6" fill="#35D6FF" opacity="0.4" />
+  </g>
+  <g id="node-2">
+    <circle cx="210" cy="475" r="16" fill="none" stroke="#35D6FF" stroke-width="1.5" opacity="0.7" />
+    <circle cx="210" cy="475" r="8" fill="#35D6FF" opacity="0.5" filter="url(#glow-cyan)" />
+  </g>
+  <g id="node-3">
+    <circle cx="380" cy="340" r="20" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+    <circle cx="380" cy="340" r="10" fill="#35D6FF" opacity="0.7" filter="url(#glow-cyan)" />
+  </g>
+  <g id="node-4">
+    <circle cx="530" cy="415" r="24" fill="none" stroke="#9B7CFF" stroke-width="2" filter="url(#glow-violet)" />
+    <circle cx="530" cy="415" r="12" fill="#9B7CFF" opacity="0.75" filter="url(#glow-violet)" />
+  </g>
+  <g id="node-5">
+    <circle cx="660" cy="450" r="28" fill="none" stroke="#9B7CFF" stroke-width="2.5" filter="url(#glow-violet)" />
+    <circle cx="660" cy="450" r="15" fill="#9B7CFF" opacity="0.85" filter="url(#glow-violet)" />
+  </g>
+  <g id="node-6">
+    <circle cx="800" cy="325" r="34" fill="none" stroke="#FFB84D" stroke-width="2.5" filter="url(#glow-gold)" />
+    <circle cx="800" cy="325" r="18" fill="#FFB84D" fill-opacity="0.6" filter="url(#glow-gold)" />
+  </g>
+  <g id="node-7-terminal">
+    <circle cx="1020" cy="220" r="85" fill="#FFB84D" fill-opacity="0.06" filter="url(#glow-gold)" />
+    <circle cx="1020" cy="220" r="60" fill="#FFB84D" fill-opacity="0.12" filter="url(#glow-gold)" />
+    <circle cx="1020" cy="220" r="44" fill="none" stroke="#FFB84D" stroke-width="3" filter="url(#glow-gold)" />
+    <circle cx="1020" cy="220" r="34" fill="none" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7" />
+    <circle cx="1020" cy="220" r="24" fill="#FFB84D" fill-opacity="0.9" filter="url(#glow-gold)" />
+  </g>
+  <g stroke="#35D6FF" stroke-width="1" opacity="0.4" stroke-linecap="round">
+    <line x1="80" y1="510" x2="80" y2="520" />
+    <line x1="380" y1="375" x2="380" y2="385" />
+    <line x1="660" y1="490" x2="660" y2="500" />
+    <line x1="1020" y1="320" x2="1020" y2="330" />
   </g>
 </svg>
