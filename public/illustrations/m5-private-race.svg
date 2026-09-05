@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-gold" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-violet" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <radialGradient id="plasma-tokamak" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFB84D" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#35D6FF" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#9B7CFF" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="plasma-linear" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#35D6FF" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#FFB84D" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#35D6FF" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- SHARED TECHNICAL GRID & AXIS GUIDES -->
+  <g opacity="0.2">
+    <!-- Center Dividing Datum Line -->
+    <line x1="600" y1="80" x2="600" y2="620" stroke="#9B7CFF" stroke-width="1" stroke-dasharray="8,8" />
+    <circle cx="600" cy="350" r="4" fill="#9B7CFF" />
+
+    <!-- Left Machine Axis -->
+    <line x1="100" y1="350" x2="500" y2="350" stroke="#35D6FF" stroke-width="0.5" stroke-dasharray="12,6" />
+    <line x1="300" y1="120" x2="300" y2="580" stroke="#35D6FF" stroke-width="0.5" stroke-dasharray="12,6" />
+
+    <!-- Right Machine Axis -->
+    <line x1="700" y1="350" x2="1100" y2="350" stroke="#35D6FF" stroke-width="0.5" stroke-dasharray="12,6" />
+    <line x1="900" y1="120" x2="900" y2="580" stroke="#35D6FF" stroke-width="0.5" stroke-dasharray="12,6" />
+  </g>
+
+  <!-- ================= LEFT MACHINE: COMPACT TOKAMAK ================= -->
+  <g id="compact-tokamak" transform="translate(0,0)">
+    <!-- Base Reference Ring -->
+    <ellipse cx="300" cy="350" rx="170" ry="110" fill="none" stroke="#35D6FF" stroke-width="1" stroke-dasharray="4,8" opacity="0.3" />
+    <ellipse cx="300" cy="350" rx="60" ry="38" fill="none" stroke="#35D6FF" stroke-width="1" stroke-dasharray="4,8" opacity="0.3" />
+
+    <!-- Plasma Core Stream (Partial/Glowing Arc) -->
+    <path d="M 180,350 A 120,78 0 1,0 420,350" fill="none" stroke="#FFB84D" stroke-width="10" opacity="0.85" filter="url(#glow-gold)" stroke-linecap="round" />
+    <path d="M 420,350 A 120,78 0 0,0 240,285" fill="none" stroke="#35D6FF" stroke-width="3" stroke-dasharray="8,6" opacity="0.6" filter="url(#glow-cyan)" />
+
+    <!-- Central Solenoid Core (Solid Section) -->
+    <rect x="280" y="260" width="40" height="180" rx="4" fill="#9B7CFF" fill-opacity="0.2" stroke="#9B7CFF" stroke-width="2" filter="url(#glow-violet)" />
+    <line x1="280" y1="290" x2="320" y2="290" stroke="#35D6FF" stroke-width="1.5" />
+    <line x1="280" y1="320" x2="320" y2="320" stroke="#FFB84D" stroke-width="1.5" />
+    <line x1="280" y1="350" x2="320" y2="350" stroke="#35D6FF" stroke-width="1.5" />
+    <line x1="280" y1="380" x2="320" y2="380" stroke="#FFB84D" stroke-width="1.5" />
+    <line x1="280" y1="410" x2="320" y2="410" stroke="#35D6FF" stroke-width="1.5" />
+
+    <!-- D-Shaped Toroidal Field Magnets (Mix of Solid & Construction Wireframe) -->
+    
+    <!-- Coil 1 (Solid, Completed - Left) -->
+    <path d="M 140,350 C 140,210 220,170 300,210 C 230,260 230,440 300,490 C 220,530 140,490 140,350 Z" 
+          fill="#35D6FF" fill-opacity="0.15" stroke="#35D6FF" stroke-width="2.5" filter="url(#glow-cyan)" />
+
+    <!-- Coil 2 (Solid, Completed - Top-Left Angle) -->
+    <path d="M 170,260 C 190,140 280,130 300,210 C 240,250 210,420 280,480 C 210,500 150,380 170,260 Z" 
+          fill="#35D6FF" fill-opacity="0.1" stroke="#35D6FF" stroke-width="2" />
+
+    <!-- Coil 3 (In Progress - Wireframe with Node Markers - Top) -->
+    <path d="M 300,180 C 370,180 440,230 320,270 C 280,300 280,400 320,430 C 440,470 370,520 300,520" 
+          fill="none" stroke="#FFB84D" stroke-width="2" stroke-dasharray="12,4" />
+    <circle cx="300" cy="180" r="4" fill="#FFB84D" filter="url(#glow-gold)" />
+    <circle cx="410" cy="210" r="3" fill="#35D6FF" />
+    <circle cx="300" cy="520" r="4" fill="#FFB84D" filter="url(#glow-gold)" />
+
+    <!-- Coil 4 (Bare Construction Outline - Right Side) -->
+    <path d="M 460,350 C 460,230 380,180 300,210" fill="none" stroke="#9B7CFF" stroke-width="1.5" stroke-dasharray="4,6" opacity="0.7" />
+    <path d="M 460,350 C 460,470 380,520 300,490" fill="none" stroke="#9B7CFF" stroke-width="1.5" stroke-dasharray="4,6" opacity="0.7" />
+
+    <!-- Floating Assembly Block / Segment (Tokamak) -->
+    <rect x="420" y="250" width="28" height="45" rx="3" fill="none" stroke="#FFB84D" stroke-width="1.5" stroke-dasharray="6,2" filter="url(#glow-gold)" />
+    <line x1="434" y1="235" x2="434" y2="250" stroke="#FFB84D" stroke-width="1" />
+    <circle cx="434" cy="232" r="2" fill="#FFB84D" />
+
+    <!-- Target Calibration Reticle -->
+    <circle cx="140" cy="350" r="8" fill="none" stroke="#FFB84D" stroke-width="1" stroke-dasharray="3,3" />
+    <line x1="140" y1="338" x2="140" y2="362" stroke="#FFB84D" stroke-width="0.75" />
+    <line x1="128" y1="350" x2="152" y2="350" stroke="#FFB84D" stroke-width="0.75" />
+  </g>
+
+  <!-- ================= RIGHT MACHINE: LINEAR PULSED TUBE ================= -->
+  <g id="linear-pulsed-machine" transform="translate(0,0)">
+    <!-- Central Linear Vacuum Chamber (Solid Center, Wireframe Ends) -->
+    
+    <!-- Central Compression Chamber (Solid/Glowing) -->
+    <rect x="850" y="310" width="100" height="80" rx="6" fill="#9B7CFF" fill-opacity="0.2" stroke="#9B7CFF" stroke-width="2.5" filter="url(#glow-violet)" />
+    <circle cx="900" cy="350" r="28" fill="none" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+    <circle cx="900" cy="350" r="8" fill="#FFB84D" filter="url(#glow-gold)" />
+
+    <!-- Linear Plasma Jet/Beam (Focusing to Center) -->
+    <line x1="680" y1="350" x2="1120" y2="350" stroke="url(#plasma-linear)" stroke-width="12" stroke-linecap="round" filter="url(#glow-gold)" />
+    <line x1="680" y1="350" x2="1120" y2="350" stroke="#35D6FF" stroke-width="2" stroke-dasharray="16,8" />
+
+    <!-- Acceleration Tube Segments - Left Injector (Mid-Construction) -->
+    <path d="M 680,325 L 850,325 M 680,375 L 850,375" stroke="#35D6FF" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.6" />
+    
+    <!-- Ring Acceleration Coils (Left Side - Completed Array) -->
+    <rect x="710" y="300" width="16" height="100" rx="3" fill="#35D6FF" fill-opacity="0.2" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+    <rect x="750" y="300" width="16" height="100" rx="3" fill="#35D6FF" fill-opacity="0.2" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+    <rect x="790" y="300" width="16" height="100" rx="3" fill="#35D6FF" fill-opacity="0.2" stroke="#35D6FF" stroke-width="2" filter="url(#glow-cyan)" />
+
+    <!-- Acceleration Tube Segments - Right Injector (Wireframe/Unfinished) -->
+    <path d="M 950,325 L 1120,325 M 950,375 L 1120,375" stroke="#9B7CFF" stroke-width="1" stroke-dasharray="4,6" opacity="0.4" />
+
+    <!-- Ring Acceleration Coils (Right Side - Wireframe / Floating Assembly) -->
+    <rect x="990" y="300" width="16" height="100" rx="3" fill="none" stroke="#FFB84D" stroke-width="2" stroke-dasharray="8,4" filter="url(#glow-gold)" />
+    <circle cx="998" cy="300" r="3" fill="#FFB84D" />
+    <circle cx="998" cy="400" r="3" fill="#FFB84D" />
+
+    <rect x="1040" y="295" width="16" height="110" rx="3" fill="none" stroke="#9B7CFF" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6" />
+
+    <rect x="1080" y="290" width="16" height="120" rx="3" fill="none" stroke="#35D6FF" stroke-width="1" stroke-dasharray="2,4" opacity="0.4" />
+
+    <!-- External Energy Storage Capacitors (Top/Bottom Symmetry) -->
+    <!-- Top Bank (Solid) -->
+    <path d="M 860,260 L 940,260 M 870,230 L 930,230 M 880,200 L 920,200" stroke="#35D6FF" stroke-width="2" />
+    <line x1="900" y1="310" x2="900" y2="200" stroke="#FFB84D" stroke-width="1.5" stroke-dasharray="6,3" filter="url(#glow-gold)" />
+    <circle cx="900" cy="200" r="4" fill="#FFB84D" />
+
+    <!-- Bottom Bank (Wireframe Assembly) -->
+    <path d="M 860,440 L 940,440 M 870,470 L 930,470 M 880,500 L 920,500" stroke="#9B7CFF" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.7" />
+    <line x1="900" y1="390" x2="900" y2="500" stroke="#9B7CFF" stroke-width="1" stroke-dasharray="4,4" />
+    <circle cx="900" cy="500" r="3" fill="#9B7CFF" />
+
+    <!-- Floating Assembly Structural Truss (Linear) -->
+    <path d="M 1030,220 L 1080,220 L 1060,270 Z" fill="none" stroke="#FFB84D" stroke-width="1.5" stroke-dasharray="6,2" filter="url(#glow-gold)" />
+    <line x1="1055" y1="220" x2="1055" y2="180" stroke="#FFB84D" stroke-width="0.75" stroke-dasharray="2,2" />
+
+    <!-- Alignment Vector Crosshair -->
+    <circle cx="1120" cy="350" r="10" fill="none" stroke="#35D6FF" stroke-width="1" stroke-dasharray="4,2" />
+    <line x1="1120" y1="335" x2="1120" y2="365" stroke="#35D6FF" stroke-width="0.75" />
+    <line x1="1105" y1="350" x2="1135" y2="350" stroke="#35D6FF" stroke-width="0.75" />
+  </g>
+
+  <!-- ABSTRACT TECHNICAL ACCENTS & MEASUREMENT GRAPHICS -->
+  <g id="technical-accents" opacity="0.5">
+    <!-- Left Machine Data Marker -->
+    <path d="M 100,560 L 160,560 L 180,580" fill="none" stroke="#35D6FF" stroke-width="1" />
+    <circle cx="100" cy="560" r="2" fill="#35D6FF" />
+
+    <!-- Right Machine Data Marker -->
+    <path d="M 1100,560 L 1040,560 L 1020,580" fill="none" stroke="#35D6FF" stroke-width="1" />
+    <circle cx="1100" cy="560" r="2" fill="#35D6FF" />
+
+    <!-- Comparative Datum Scale Lines at Bottom -->
+    <line x1="200" y1="620" x2="400" y2="620" stroke="#35D6FF" stroke-width="1" />
+    <line x1="200" y1="615" x2="200" y2="625" stroke="#35D6FF" stroke-width="1" />
+    <line x1="400" y1="615" x2="400" y2="625" stroke="#35D6FF" stroke-width="1" />
+    <line x1="300" y1="617" x2="300" y2="623" stroke="#35D6FF" stroke-width="1" />
+
+    <line x1="800" y1="620" x2="1000" y2="620" stroke="#35D6FF" stroke-width="1" />
+    <line x1="800" y1="615" x2="800" y2="625" stroke="#35D6FF" stroke-width="1" />
+    <line x1="1000" y1="615" x2="1000" y2="625" stroke="#35D6FF" stroke-width="1" />
+    <line x1="900" y1="617" x2="900" y2="623" stroke="#35D6FF" stroke-width="1" />
+  </g>
+</svg>
