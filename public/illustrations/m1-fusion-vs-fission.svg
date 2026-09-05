@@ -36,7 +36,7 @@
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="675" fill="#07111F" />
+ 
 
   <!-- Center Split Line -->
   <line x1="600" y1="90" x2="600" y2="585" stroke="#35D6FF" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="6 6" />
